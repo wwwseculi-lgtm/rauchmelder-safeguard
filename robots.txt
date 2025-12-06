@@ -1,0 +1,23 @@
+# Secu.li Robots.txt
+# https://secu.li
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://secu.li/sitemap.xml
+
+# Block admin/system files
+Disallow: /generate_*.py
+Disallow: /*.py$
+Disallow: /icons/
+Disallow: /service-worker.js
+
+# Allow all important pages
+Allow: /index.html
+Allow: /kontakt.html
+Allow: /produkte.html
+Allow: /service.html
+Allow: /ueber-uns.html
+Allow: /danke.html
+Allow: /standorte/

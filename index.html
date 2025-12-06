@@ -23,6 +23,80 @@
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-72x72.png">
+
+    <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Secu.li - Rauchmelder Service",
+        "description": "Professionelle Rauchmelder-Installation, Wartung und Prüfung in ganz Deutschland. DIN 14676 zertifiziert.",
+        "url": "https://secu.li",
+        "logo": "https://secu.li/icons/icon-512x512.png",
+        "image": "https://secu.li/images/hero-bg.png",
+        "email": "info@secu.li",
+        "telephone": "+49-800-123-4567",
+        "priceRange": "€€",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "DE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "51.1657",
+            "longitude": "10.4515"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Germany"
+        },
+        "serviceType": [
+            "Rauchmelder Installation",
+            "Rauchmelder Wartung",
+            "Rauchmelder Prüfung",
+            "Brandschutz Service"
+        ],
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "sameAs": []
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Secu.li",
+        "url": "https://secu.li",
+        "logo": "https://secu.li/icons/icon-512x512.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+49-800-123-4567",
+            "contactType": "customer service",
+            "availableLanguage": ["German", "English"]
+        }
+    }
+    </script>
+
+    <!-- WebSite Schema for Sitelinks -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Secu.li",
+        "url": "https://secu.li",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://secu.li/standorte/deutschland/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
 
 <body>
