@@ -1,23 +1,32 @@
-/* Secu.li Europe - Pyrexx-Style Design System */
+/* Secu.li Europe - Fire Safety Design System */
 :root {
-    /* Simplified Color Palette - Pyrexx Style */
-    --primary: #005AA9;
-    --primary-dark: #004480;
-    --primary-light: #E8F1FA;
+    /* Fire Safety Color Palette - Red, Yellow, Black */
+    --primary: #D32F2F;
+    /* Fire Red */
+    --primary-dark: #B71C1C;
+    /* Dark Red */
+    --primary-light: #FFEBEE;
+    /* Light Red Background */
+    --accent: #FFC107;
+    /* Warning Yellow */
+    --accent-dark: #FFA000;
+    /* Dark Yellow */
     --white: #FFFFFF;
-    --gray-50: #F5F7FA;
-    --gray-100: #EEF1F5;
-    --gray-200: #E0E4EA;
-    --gray-300: #C8CED8;
-    --gray-400: #94A3B8;
-    --gray-500: #64748B;
-    --gray-600: #475569;
-    --gray-700: #334155;
-    --gray-800: #1E293B;
-    --gray-900: #0F172A;
-    --success: #16A34A;
-    --warning: #CA8A04;
-    --error: #DC2626;
+    --gray-50: #FAFAFA;
+    --gray-100: #F5F5F5;
+    --gray-200: #EEEEEE;
+    --gray-300: #E0E0E0;
+    --gray-400: #BDBDBD;
+    --gray-500: #9E9E9E;
+    --gray-600: #757575;
+    --gray-700: #424242;
+    --gray-800: #212121;
+    /* Near Black */
+    --gray-900: #121212;
+    /* Dark Black */
+    --success: #4CAF50;
+    --warning: #FF9800;
+    --error: #F44336;
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
