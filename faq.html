@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Häufig gestellte Fragen zu Rauchmeldern: Installation, Wartung, Rauchmelderpflicht, Batteriewechsel und mehr. Alle Antworten auf einen Blick.">
+    <meta name="keywords"
+        content="Rauchmelder FAQ, Rauchmelder Fragen, Rauchmelderpflicht, Rauchmelder piept, Rauchmelder Batterie, DIN 14676">
+    <title>FAQ | Häufig gestellte Fragen zu Rauchmeldern | Secu.li</title>
+    <link rel="canonical" href="https://secu.li/faq.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#C41E3A">
+    <style>
+        .faq-hero {
+            padding: 100px 20px 40px;
+            background: linear-gradient(135deg, #F0F9FF, #FFF);
+            text-align: center;
+        }
+
+        .faq-hero h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .faq-section {
+            padding: 40px 20px;
+        }
+
+        .faq-category {
+            margin-bottom: 40px;
+        }
+
+        .faq-category h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .faq-item {
+            background: #F9FAFB;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #F3F4F6;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer-inner {
+            padding: 0 20px 20px;
+            color: #4B5563;
+            line-height: 1.7;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary), #E53E3E);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .cta-box .btn {
+            background: white;
+            color: var(--primary);
+        }
+
+        @media (min-width: 768px) {
+            .faq-hero {
+                padding: 140px 20px 60px;
+            }
+
+            .faq-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .faq-section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+
+    <!-- FAQ Schema for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wo müssen Rauchmelder installiert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In allen deutschen Bundesländern müssen Rauchmelder in Schlafzimmern, Kinderzimmern und Fluren (die als Rettungswege dienen) installiert werden. In einigen Bundesländern wie Berlin, Brandenburg und Thüringen gilt die Pflicht auch für Wohnzimmer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie oft müssen Rauchmelder gewartet werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nach DIN 14676 müssen Rauchmelder mindestens einmal jährlich geprüft werden. Die Wartung umfasst einen Funktionstest, Sichtprüfung und bei Bedarf Reinigung. Nach spätestens 10 Jahren müssen die Geräte ausgetauscht werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Mein Rauchmelder piept regelmäßig - was tun?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein regelmäßiges Piepen (alle 30-60 Sekunden) deutet auf eine schwache Batterie hin. Bei Meldern mit Wechselbatterie können Sie die Batterie selbst tauschen. Bei 10-Jahres-Meldern mit fest verbauter Batterie muss das gesamte Gerät ersetzt werden."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Secu.li</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <a href="kontakt.html" class="btn btn-primary btn-sm">Anfrage</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">Startseite</a>
+        <a href="produkte.html">Produkte</a>
+        <a href="service.html">Service</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <span class="hero-badge-top">❓ Ihre Fragen - Unsere Antworten</span>
+            <h1>Häufig gestellte Fragen</h1>
+            <p class="subtitle">Alles Wissenswerte rund um Rauchmelder, Installation, Wartung und die gesetzliche
+                Rauchmelderpflicht in Deutschland.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+
+            <!-- Rauchmelderpflicht -->
+            <div class="faq-category">
+                <h2>🏠 Rauchmelderpflicht in Deutschland</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Wo müssen Rauchmelder installiert werden?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            In allen 16 deutschen Bundesländern gilt die Rauchmelderpflicht. Rauchmelder müssen in
+                            folgenden Räumen installiert werden:
+                            <ul>
+                                <li><strong>Schlafzimmer</strong> - Schutz während des Schlafs</li>
+                                <li><strong>Kinderzimmer</strong> - Besonderer Schutz für Kinder</li>
+                                <li><strong>Flure</strong> - Die als Rettungswege dienen</li>
+                            </ul>
+                            In einigen Bundesländern (Berlin, Brandenburg, Thüringen) gilt die Pflicht auch für
+                            Wohnzimmer und Arbeitszimmer.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Wer ist für die Installation verantwortlich?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Die Installation von Rauchmeldern ist in Deutschland <strong>Aufgabe des
+                                Eigentümers</strong> (Vermieter). Dieser muss dafür sorgen, dass in allen
+                            vorgeschriebenen Räumen funktionsfähige Rauchmelder angebracht sind. Die Kosten für
+                            Anschaffung und Installation trägt der Eigentümer.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Wer ist für die Wartung zuständig - Mieter oder Vermieter?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Das ist je nach Bundesland unterschiedlich geregelt:
+                            <ul>
+                                <li><strong>Mieter zuständig:</strong> Baden-Württemberg, Bayern, Bremen, Hessen, NRW,
+                                    Sachsen, Schleswig-Holstein</li>
+                                <li><strong>Vermieter zuständig:</strong> Berlin, Brandenburg, Hamburg,
+                                    Mecklenburg-Vorpommern, Niedersachsen, Sachsen-Anhalt, Thüringen</li>
+                            </ul>
+                            Der Vermieter kann die Wartung jedoch auch selbst übernehmen oder einen Dienstleister
+                            beauftragen.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wartung -->
+            <div class="faq-category">
+                <h2>🔧 Wartung & Prüfung</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Wie oft müssen Rauchmelder gewartet werden?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Nach DIN 14676 müssen Rauchmelder <strong>mindestens einmal jährlich</strong> geprüft
+                            werden. Die Wartung umfasst:
+                            <ul>
+                                <li>Funktionstest durch Drücken der Prüftaste</li>
+                                <li>Sichtprüfung auf Beschädigungen</li>
+                                <li>Kontrolle der Raucheintrittsöffnungen</li>
+                                <li>Prüfung der korrekten Montageposition</li>
+                                <li>Bei Bedarf: Reinigung und Batteriewechsel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Wann müssen Rauchmelder ausgetauscht werden?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Rauchmelder haben eine <strong>Lebensdauer von 10 Jahren</strong>. Nach Ablauf dieser Frist
+                            müssen sie komplett ausgetauscht werden, auch wenn sie noch zu funktionieren scheinen. Das
+                            Produktionsdatum finden Sie auf dem Gerät - meist auf der Rückseite.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Mein Rauchmelder piept regelmäßig - was tun?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Ein regelmäßiges kurzes Piepen (alle 30-60 Sekunden) zeigt eine <strong>schwache
+                                Batterie</strong> an:
+                            <ul>
+                                <li><strong>Rauchmelder mit Wechselbatterie:</strong> Batterie selbst austauschen (meist
+                                    9V-Block oder AA)</li>
+                                <li><strong>10-Jahres-Melder:</strong> Das gesamte Gerät muss ersetzt werden, da die
+                                    Batterie fest verbaut ist</li>
+                            </ul>
+                            Tauschen Sie die Batterie möglichst zeitnah - ein Rauchmelder mit schwacher Batterie bietet
+                            keinen zuverlässigen Schutz!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fehlalarm -->
+            <div class="faq-category">
+                <h2>🔊 Fehlalarm & Probleme</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Mein Rauchmelder löst Fehlalarm aus - was kann ich tun?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Fehlalarme können verschiedene Ursachen haben:
+                            <ul>
+                                <li><strong>Staub/Insekten:</strong> Reinigen Sie den Melder vorsichtig mit einem
+                                    trockenen Tuch oder Staubsauger</li>
+                                <li><strong>Wasserdampf:</strong> Rauchmelder sollten nicht in der Nähe von Badezimmer
+                                    oder Küche montiert werden</li>
+                                <li><strong>Starke Temperaturschwankungen:</strong> Können die Elektronik beeinflussen
+                                </li>
+                                <li><strong>Alter des Geräts:</strong> Ältere Melder werden empfindlicher</li>
+                            </ul>
+                            Bei wiederholten Fehlalarmen empfehlen wir den Austausch des Geräts.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Rauchmelder in der Küche - ja oder nein?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Klassische Rauchmelder sind für Küchen <strong>nicht empfohlen</strong>, da Kochdämpfe
+                            häufig Fehlalarme auslösen. Für Küchen eignen sich:
+                            <ul>
+                                <li><strong>Hitzemelder:</strong> Reagieren nur auf Temperaturanstieg, nicht auf Rauch
+                                </li>
+                                <li><strong>Spezielle Küchen-Rauchmelder:</strong> Mit reduzierter Empfindlichkeit</li>
+                            </ul>
+                            Wir beraten Sie gerne zur optimalen Lösung für Ihre Küche.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installation -->
+            <div class="faq-category">
+                <h2>🔨 Installation</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Kann ich Rauchmelder selbst installieren?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Grundsätzlich ja - die meisten Rauchmelder lassen sich einfach mit zwei Schrauben oder
+                            Klebepads an der Decke befestigen. <strong>Wichtig ist die korrekte Positionierung:</strong>
+                            <ul>
+                                <li>Mittig an der Decke (mindestens 50cm Abstand zur Wand)</li>
+                                <li>Nicht in der Nähe von Zugluft oder Lüftungsöffnungen</li>
+                                <li>Nicht in Räumen mit viel Dampf oder Staub</li>
+                            </ul>
+                            Für eine normgerechte Installation nach DIN 14676 mit vollständiger Dokumentation empfehlen
+                            wir unseren professionellen Service.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Was kostet die professionelle Installation?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Die Kosten hängen von der Anzahl der Räume und dem gewählten Rauchmeldertyp ab. Für ein
+                            unverbindliches Angebot kontaktieren Sie uns - wir erstellen Ihnen ein individuelles Angebot
+                            basierend auf Ihren Anforderungen. <a href="kontakt.html"
+                                style="color: var(--primary); text-decoration: underline;">Jetzt Angebot anfordern →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="cta-box">
+                <h3>Noch Fragen? Wir helfen Ihnen gerne!</h3>
+                <p style="margin-bottom: 20px;">Kontaktieren Sie uns für eine persönliche Beratung.</p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="tel:+4915778631120" class="btn">📞 Jetzt anrufen</a>
+                    <a href="kontakt.html" class="btn">✉️ Kontaktformular</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple" style="text-align: center; padding: 30px 0;">
+                <p>&copy; 2024 Secu.li - Rauchmelder FAQ</p>
+                <div class="footer-links" style="margin-top: 15px;">
+                    <a href="impressum.html">Impressum</a> |
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

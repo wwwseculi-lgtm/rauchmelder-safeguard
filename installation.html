@@ -15,7 +15,307 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#C41E3A">
+    <style>
+        /* Mobile-First Service Page Styles */
+        .service-hero {
+            padding: 100px 20px 40px;
+            background: linear-gradient(135deg, #FEF2F2, #FFF);
+            text-align: center;
+        }
+
+        .service-hero h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .service-hero .subtitle {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .service-hero .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar {
+            background: #F9FAFB;
+            padding: 25px;
+            border-radius: 15px;
+            order: -1;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+
+        .benefit-item {
+            padding: 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .benefit-icon {
+            background: #10B981;
+            color: white;
+            min-width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-section {
+            padding: 40px 20px;
+        }
+
+        .contact-form-wrapper {
+            max-width: 100%;
+        }
+
+        /* Tablet and Desktop */
+        @media (min-width: 768px) {
+            .service-hero {
+                padding: 140px 20px 60px;
+            }
+
+            .service-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .service-hero .hero-buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .content-grid {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 60px;
+                align-items: start;
+            }
+
+            .sidebar {
+                order: 0;
+                position: sticky;
+                top: 100px;
+            }
+
+            .form-row {
+                flex-direction: row;
+            }
+
+            .contact-form-wrapper {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Secu.li</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <a href="#kontakt" class="btn btn-primary btn-sm">Anfrage</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">Startseite</a>
+        <a href="service.html">Service</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#kontakt">Anfrage senden</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <span class="hero-badge-top">🔧 Professioneller Service</span>
+            <h1>Rauchmelder Installation</h1>
+            <p class="subtitle">Fachgerechte Montage von Rauchwarnmeldern nach DIN 14676. Unsere zertifizierten
+                Techniker installieren Ihre Rauchmelder schnell, sauber und normgerecht.</p>
+            <div class="hero-buttons">
+                <a href="#kontakt" class="btn btn-primary btn-lg">Kostenlos anfragen</a>
+                <a href="tel:+4915778631120" class="btn btn-outline btn-lg">📞 Jetzt anrufen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>Warum professionelle Installation?</h2>
+                    <p>Die korrekte Installation von Rauchmeldern ist entscheidend für Ihre Sicherheit. Falsch
+                        positionierte Geräte können im Ernstfall zu spät oder gar nicht warnen. Unsere geschulten
+                        Fachkräfte wissen genau, wo Rauchmelder platziert werden müssen.</p>
+
+                    <h3>Unsere Installations-Leistungen:</h3>
+                    <ul class="feature-list">
+                        <li>✓ <strong>Bedarfsanalyse</strong> - Wir prüfen Ihre Räumlichkeiten und ermitteln den
+                            optimalen Bedarf</li>
+                        <li>✓ <strong>Normgerechte Montage</strong> - Installation nach DIN 14676 und Herstellervorgaben
+                        </li>
+                        <li>✓ <strong>Funktionstest</strong> - Jeder installierte Melder wird vor Ort getestet</li>
+                        <li>✓ <strong>Dokumentation</strong> - Vollständiges Installationsprotokoll für Ihre Unterlagen
+                        </li>
+                        <li>✓ <strong>Einweisung</strong> - Wir erklären Ihnen die Funktionen und Wartungshinweise</li>
+                    </ul>
+
+                    <h3>Für wen ist unser Service?</h3>
+                    <p>Ob Privathaushalt, Vermieter mit mehreren Wohnungen oder Hausverwaltung - wir bieten
+                        maßgeschneiderte Lösungen für jeden Bedarf.</p>
+
+                    <h3>Rauchmelderpflicht in Deutschland</h3>
+                    <p>In allen 16 Bundesländern gilt die Rauchmelderpflicht. Rauchmelder müssen in Schlafzimmern,
+                        Kinderzimmern und Fluren installiert werden. Wir garantieren eine normkonforme Umsetzung.</p>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Ihre Vorteile</h3>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        DIN 14676 zertifiziert
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        Geschulte Techniker
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        Schnelle Termine
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        Faire Festpreise
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        Dokumentation inklusive
+                    </div>
+                    <a href="tel:+4915778631120" class="btn btn-primary"
+                        style="width: 100%; margin-top: 20px; text-align: center;">📞 +49 157 78631120</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section bg-gray contact-section" id="kontakt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jetzt Installation anfragen</h2>
+                <p>Kostenlose Beratung und unverbindliches Angebot</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" action="https://formspree.io/f/xrbnlwal" method="POST">
+                    <input type="hidden" name="_subject" value="Installation Anfrage - secu.li">
+                    <input type="hidden" name="service" value="Rauchmelder Installation">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+49 157 78631120">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="standort">Standort / Stadt</label>
+                        <input type="text" id="standort" name="standort" placeholder="z.B. Berlin, München...">
+                    </div>
+                    <div class="form-group">
+                        <label for="units">Anzahl Wohneinheiten / Räume</label>
+                        <select id="units" name="units">
+                            <option value="">Bitte auswählen...</option>
+                            <option value="1-5">1-5 Räume</option>
+                            <option value="6-20">6-20 Räume</option>
+                            <option value="21-50">21-50 Räume</option>
+                            <option value="50+">Mehr als 50</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ihre Nachricht</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Beschreiben Sie kurz Ihr Anliegen..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Kostenlos
+                        anfragen</button>
+                    <p style="font-size: 0.875rem; color: #6B7280; margin-top: 1rem; text-align: center;">
+                        🔒 Ihre Daten werden vertraulich behandelt. Antwort innerhalb von 24 Stunden.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple" style="text-align: center; padding: 30px 0;">
+                <p>&copy; 2024 Secu.li - Rauchmelder Installation</p>
+                <div class="footer-links" style="margin-top: 15px;">
+                    <a href="impressum.html">Impressum</a> |
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
 
 <body>
     <!-- Header -->
