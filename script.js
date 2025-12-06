@@ -1,4 +1,4 @@
-// SafeGuard Europe - JavaScript
+// Secu.li Europe - JavaScript
 document.addEventListener('DOMContentLoaded', function () {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
