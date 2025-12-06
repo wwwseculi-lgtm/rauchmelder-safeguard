@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anfrage erfolgreich gesendet | Secu.li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .success-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gray-50, #F5F7FA);
+            padding: 2rem;
+        }
+
+        .success-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 3rem;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10B981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .success-card h1 {
+            color: #111827;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-card p {
+            color: #6B7280;
+            font-size: 1.0625rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .success-card .highlight {
+            color: #C41E3A;
+            font-weight: 600;
+        }
+
+        .success-card .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            background: #C41E3A;
+            color: white;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .success-card .btn:hover {
+            background: #A01830;
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #E5E7EB;
+            font-size: 0.9375rem;
+            color: #9CA3AF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-page">
+        <div class="success-card">
+            <div class="success-icon">✓</div>
+            <h1>Anfrage erfolgreich gesendet!</h1>
+            <p>Vielen Dank für Ihre Anfrage. Wir haben Ihre Nachricht erhalten und werden uns <span
+                    class="highlight">innerhalb von 24 Stunden</span> bei Ihnen melden.</p>
+            <p>Bei dringenden Fragen erreichen Sie uns auch telefonisch.</p>
+            <a href="index.html" class="btn">Zurück zur Startseite</a>
+            <div class="contact-info">
+                <p style="margin-bottom: 0;">📧 info@secu.li | 📞 +49 800 123 4567</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

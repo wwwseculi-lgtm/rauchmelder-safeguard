@@ -48,51 +48,58 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Contact Form Handling - sends via mailto to www.secu.li@gmail.com
+    // Contact Form Handling - AJAX submission to Formspree
     const heroForm = document.getElementById('heroContactForm');
     if (heroForm) {
-        heroForm.addEventListener('submit', function (e) {
+        heroForm.addEventListener('submit', async function (e) {
             e.preventDefault();
 
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name') || '';
-            const email = formData.get('email') || '';
-            const phone = formData.get('phone') || '';
-            const service = formData.get('service') || '';
-            const units = formData.get('units') || '';
-            const message = formData.get('message') || '';
+            const btn = heroForm.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
 
             // Validate required fields
+            const name = heroForm.querySelector('[name="name"]').value;
+            const email = heroForm.querySelector('[name="email"]').value;
+
             if (!name || !email) {
                 alert('Bitte füllen Sie alle Pflichtfelder aus.');
                 return;
             }
 
-            // Build email body
-            const subject = encodeURIComponent('Neue Anfrage von secu.li - ' + name);
-            const body = encodeURIComponent(
-                `Name: ${name}\n` +
-                `E-Mail: ${email}\n` +
-                `Telefon: ${phone}\n` +
-                `Service: ${service}\n` +
-                `Wohneinheiten: ${units}\n` +
-                `\nNachricht:\n${message}`
-            );
+            // Show loading state
+            btn.textContent = 'Wird gesendet...';
+            btn.disabled = true;
+            btn.style.opacity = '0.7';
 
-            // Open email client
-            window.location.href = `mailto:www.secu.li@gmail.com?subject=${subject}&body=${body}`;
+            try {
+                // Submit to Formspree via AJAX
+                const formData = new FormData(heroForm);
+                const response = await fetch(heroForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
 
-            // Show success message
-            const btn = heroForm.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-            btn.textContent = '✓ E-Mail wird geöffnet...';
-            btn.style.background = '#10B981';
+                if (response.ok) {
+                    // Success - redirect to thank you page
+                    window.location.href = 'danke.html';
+                } else {
+                    throw new Error('Formular-Fehler');
+                }
+            } catch (error) {
+                // Error handling
+                btn.textContent = '❌ Fehler - bitte erneut versuchen';
+                btn.style.background = '#EF4444';
+                btn.disabled = false;
 
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.style.background = '';
-            }, 3000);
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                    btn.style.opacity = '';
+                }, 3000);
+            }
         });
     }
 
