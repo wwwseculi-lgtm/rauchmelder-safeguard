@@ -562,6 +562,420 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/4917123456789?text=Hallo!%20Ich%20interessiere%20mich%20für%20Ihren%20Rauchmelder-Service."
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        <span class="whatsapp-tooltip">💬 Jetzt chatten!</span>
+    </a>
+
+    <!-- URGENCY BAR -->
+    <div class="urgency-bar" id="urgencyBar">
+        <div class="container">
+            <span>🔥 <strong>Dezember-Aktion:</strong> Kostenlose Erstberatung + 15% Rabatt auf alle Installationen!
+                <span class="countdown" id="countdown"></span></span>
+            <a href="#kontakt" class="urgency-cta">Jetzt sichern →</a>
+        </div>
+    </div>
+
+    <!-- EXIT INTENT POPUP -->
+    <div class="exit-popup" id="exitPopup">
+        <div class="exit-popup-overlay" onclick="closeExitPopup()"></div>
+        <div class="exit-popup-content">
+            <button class="exit-popup-close" onclick="closeExitPopup()">×</button>
+            <div class="exit-popup-icon">🎁</div>
+            <h3>Warten Sie!</h3>
+            <p><strong>Exklusives Angebot nur für Sie:</strong></p>
+            <p class="exit-popup-offer">Kostenlose Beratung + 20% Rabatt auf Ihre erste Rauchmelder-Installation!</p>
+            <form class="exit-popup-form" action="https://formspree.io/f/xrbnlwal" method="POST">
+                <input type="hidden" name="_subject" value="EXIT-POPUP Anfrage - 20% Rabatt">
+                <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                <button type="submit" class="btn btn-primary">20% Rabatt sichern!</button>
+            </form>
+            <p class="exit-popup-guarantee">✓ Keine Spam-E-Mails ✓ Jederzeit kündbar</p>
+        </div>
+    </div>
+
+    <!-- SOCIAL PROOF NOTIFICATION -->
+    <div class="social-proof" id="socialProof">
+        <div class="social-proof-content">
+            <div class="social-proof-icon">✓</div>
+            <div class="social-proof-text">
+                <strong id="proofName">Max M. aus Berlin</strong>
+                <span>hat gerade eine Anfrage gesendet</span>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 100px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            transform: translateX(-10px);
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 70px;
+            background: #333;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(0);
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        @keyframes pulse-whatsapp {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 4px 40px rgba(37, 211, 102, 0.8);
+            }
+        }
+
+        /* Urgency Bar */
+        .urgency-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(90deg, #C41E3A, #E53E3E);
+            color: white;
+            padding: 12px 20px;
+            z-index: 9998;
+            text-align: center;
+            font-size: 0.95rem;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .urgency-bar .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .urgency-cta {
+            background: white;
+            color: #C41E3A;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .urgency-cta:hover {
+            background: #FFF3CD;
+            transform: scale(1.05);
+        }
+
+        .countdown {
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 10px;
+            border-radius: 4px;
+        }
+
+        /* Exit Popup */
+        .exit-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99999;
+        }
+
+        .exit-popup.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .exit-popup-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            animation: fadeIn 0.3s;
+        }
+
+        .exit-popup-content {
+            position: relative;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+            animation: slideUp 0.4s ease-out;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .exit-popup-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .exit-popup-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .exit-popup-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .exit-popup-offer {
+            background: linear-gradient(135deg, #C41E3A, #E53E3E);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+
+        .exit-popup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .exit-popup-form input {
+            padding: 15px;
+            border: 2px solid #E5E7EB;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .exit-popup-form button {
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        .exit-popup-guarantee {
+            font-size: 0.85rem;
+            color: #6B7280;
+            margin-top: 15px;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Social Proof */
+        .social-proof {
+            position: fixed;
+            bottom: 80px;
+            left: 25px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+            z-index: 9997;
+            transform: translateX(-400px);
+            transition: transform 0.5s ease;
+            max-width: 280px;
+        }
+
+        .social-proof.active {
+            transform: translateX(0);
+        }
+
+        .social-proof-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .social-proof-icon {
+            width: 40px;
+            height: 40px;
+            background: #10B981;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .social-proof-text strong {
+            display: block;
+            color: #111;
+        }
+
+        .social-proof-text span {
+            font-size: 0.85rem;
+            color: #6B7280;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 80px;
+                right: 15px;
+                width: 55px;
+                height: 55px;
+            }
+
+            .urgency-bar {
+                font-size: 0.85rem;
+                padding: 10px 15px;
+            }
+
+            .urgency-bar .container {
+                gap: 10px;
+            }
+
+            .social-proof {
+                bottom: 150px;
+                left: 10px;
+                right: 10px;
+                max-width: none;
+            }
+
+            .exit-popup-content {
+                padding: 25px;
+            }
+        }
+    </style>
+
+    <script>
+        // Countdown Timer - ends Sunday midnight
+        function updateCountdown() {
+            const now = new Date();
+            const sunday = new Date();
+            sunday.setDate(now.getDate() + (7 - now.getDay()));
+            sunday.setHours(23, 59, 59, 999);
+
+            const diff = sunday - now;
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById('countdown').textContent =
+                `⏰ Endet in ${hours}h ${minutes}min`;
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+
+        // Exit Intent Popup
+        let exitShown = false;
+        document.addEventListener('mouseleave', function (e) {
+            if (e.clientY < 10 && !exitShown && !localStorage.getItem('exitPopupShown')) {
+                document.getElementById('exitPopup').classList.add('active');
+                exitShown = true;
+                localStorage.setItem('exitPopupShown', 'true');
+            }
+        });
+        function closeExitPopup() {
+            document.getElementById('exitPopup').classList.remove('active');
+        }
+        // Show popup after 45 seconds anyway if user hasn't interacted
+        setTimeout(function () {
+            if (!exitShown && !localStorage.getItem('exitPopupShown')) {
+                document.getElementById('exitPopup').classList.add('active');
+                exitShown = true;
+            }
+        }, 45000);
+
+        // Social Proof Notifications
+        const proofData = [
+            { name: "Max M. aus Berlin", action: "hat gerade eine Anfrage gesendet" },
+            { name: "Laura K. aus München", action: "hat gerade eine Beratung angefordert" },
+            { name: "Thomas B. aus Hamburg", action: "hat gerade ein Angebot erhalten" },
+            { name: "Sandra W. aus Köln", action: "hat eine Installation gebucht" },
+            { name: "Michael R. aus Frankfurt", action: "hat gerade eine Anfrage gesendet" },
+            { name: "Julia S. aus Düsseldorf", action: "hat eine Beratung angefordert" },
+            { name: "Peter H. aus Stuttgart", action: "hat gerade ein Angebot erhalten" },
+            { name: "Anna M. aus Dresden", action: "hat eine Anfrage gesendet" }
+        ];
+        let proofIndex = 0;
+
+        function showSocialProof() {
+            const proof = proofData[proofIndex];
+            document.getElementById('proofName').textContent = proof.name;
+            document.querySelector('.social-proof-text span').textContent = proof.action;
+
+            const element = document.getElementById('socialProof');
+            element.classList.add('active');
+
+            setTimeout(() => {
+                element.classList.remove('active');
+            }, 4000);
+
+            proofIndex = (proofIndex + 1) % proofData.length;
+        }
+
+        // Show first proof after 8 seconds, then every 25-40 seconds
+        setTimeout(showSocialProof, 8000);
+        setInterval(showSocialProof, 25000 + Math.random() * 15000);
+    </script>
 </body>
 
 </html>
