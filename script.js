@@ -48,7 +48,55 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Contact Form Handling
+    // Contact Form Handling - sends via mailto to www.secu.li@gmail.com
+    const heroForm = document.getElementById('heroContactForm');
+    if (heroForm) {
+        heroForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name') || '';
+            const email = formData.get('email') || '';
+            const phone = formData.get('phone') || '';
+            const service = formData.get('service') || '';
+            const units = formData.get('units') || '';
+            const message = formData.get('message') || '';
+
+            // Validate required fields
+            if (!name || !email) {
+                alert('Bitte füllen Sie alle Pflichtfelder aus.');
+                return;
+            }
+
+            // Build email body
+            const subject = encodeURIComponent('Neue Anfrage von secu.li - ' + name);
+            const body = encodeURIComponent(
+                `Name: ${name}\n` +
+                `E-Mail: ${email}\n` +
+                `Telefon: ${phone}\n` +
+                `Service: ${service}\n` +
+                `Wohneinheiten: ${units}\n` +
+                `\nNachricht:\n${message}`
+            );
+
+            // Open email client
+            window.location.href = `mailto:www.secu.li@gmail.com?subject=${subject}&body=${body}`;
+
+            // Show success message
+            const btn = heroForm.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = '✓ E-Mail wird geöffnet...';
+            btn.style.background = '#10B981';
+
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+            }, 3000);
+        });
+    }
+
+    // Kontakt page form handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
@@ -92,25 +140,28 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             if (isValid) {
-                // Show success message
+                // Build mailto link
+                const subject = encodeURIComponent('Kontaktanfrage von secu.li');
+                const body = encodeURIComponent(
+                    `Name: ${data.firstName} ${data.lastName}\n` +
+                    `E-Mail: ${data.email}\n` +
+                    `Telefon: ${data.phone || 'Nicht angegeben'}\n` +
+                    `Land: ${data.country}\n` +
+                    `Betreff: ${data.subject}\n` +
+                    `\nNachricht:\n${data.message}`
+                );
+
+                window.location.href = `mailto:www.secu.li@gmail.com?subject=${subject}&body=${body}`;
+
                 const btn = contactForm.querySelector('button[type="submit"]');
-                const originalText = btn.textContent;
-                btn.textContent = 'Wird gesendet...';
-                btn.disabled = true;
+                btn.textContent = '✓ E-Mail wird geöffnet...';
+                btn.style.background = '#10B981';
 
-                // Simulate form submission
                 setTimeout(() => {
-                    btn.textContent = '✓ Erfolgreich gesendet!';
-                    btn.style.background = '#10B981';
-
-                    // Reset form after delay
-                    setTimeout(() => {
-                        contactForm.reset();
-                        btn.textContent = originalText;
-                        btn.style.background = '';
-                        btn.disabled = false;
-                    }, 3000);
-                }, 1500);
+                    contactForm.reset();
+                    btn.textContent = 'Nachricht senden';
+                    btn.style.background = '';
+                }, 3000);
             }
         });
 
