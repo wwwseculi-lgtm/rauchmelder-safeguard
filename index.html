@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Secu.li - Ihr europäischer Partner für Rauchmelder, CO-Melder und professionelle Brandschutzlösungen. EU-zertifiziert, 10 Jahre Batterie, Smart-Home kompatibel.">
+        content="Secu.li - Professioneller Rauchmelder-Service für ganz Europa. Beratung, Planung, Montage und Wartung nach aktuellen Normen. Für Privathaushalte, Vermieter und Unternehmen.">
     <meta name="keywords"
-        content="Rauchmelder kaufen europaweit, Brandschutz EU, Rauchmelder Installation, Funkrauchmelder Europa, CO-Melder">
-    <title>Secu.li | Rauchmelder & Brandschutz für ganz Europa</title>
+        content="Rauchmelder Service, Brandschutz Europa, Rauchmelder Montage, Rauchmelder Wartung, DIN 14676">
+    <title>Secu.li | Rauchmelder-Service für ganz Europa</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,13 +17,8 @@
 
     <!-- PWA -->
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#005AA9">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Secu.li">
+    <meta name="theme-color" content="#0F172A">
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-72x72.png">
 </head>
 
 <body>
@@ -30,19 +26,17 @@
     <header class="header" id="header">
         <div class="container">
             <a href="index.html" class="logo">
-
                 <span>Secu.li</span>
             </a>
             <nav class="nav">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Startseite</a></li>
-                    <li><a href="produkte.html">Produkte</a></li>
-                    <li><a href="service.html">Montage & Service</a></li>
-                    <li><a href="ueber-uns.html">Über uns</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li><a href="#produkte">Produkte</a></li>
+                    <li><a href="#ablauf">Ablauf</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
                 <div class="lang-switcher">
-                    <select onchange="window.location.href=this.value" aria-label="Sprache wählen">
+                    <select onchange="window.location.href=this.value" aria-label="Sprache">
                         <option value="index.html" selected>🇩🇪 DE</option>
                         <option value="en/index.html">🇬🇧 EN</option>
                         <option value="sr/index.html">🇷🇸 SR</option>
@@ -50,8 +44,8 @@
                         <option value="bg/index.html">🇧🇬 BG</option>
                     </select>
                 </div>
-                <a href="kontakt.html" class="btn btn-primary">Jetzt anfragen</a>
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen">
+                <a href="#kontakt" class="header-cta">Beratung anfragen</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü">
                     <span></span><span></span><span></span>
                 </button>
             </nav>
@@ -60,422 +54,376 @@
 
     <!-- Mobile Navigation -->
     <nav class="mobile-nav" id="mobileNav">
-        <a href="index.html">Startseite</a>
-        <a href="produkte.html">Produkte</a>
-        <a href="service.html">Montage & Service</a>
-        <a href="ueber-uns.html">Über uns</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#produkte">Produkte</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt">Kontakt</a>
     </nav>
 
-    <!-- Hero Section - Clean & Simple -->
-    <section class="hero hero-simple">
+    <!-- 1. HERO SECTION -->
+    <section class="hero section">
         <div class="container">
-            <div class="hero-content hero-centered">
-                <div class="hero-text">
-                    <span class="hero-badge-top">🔒 Ihr Partner für Brandschutz in Europa</span>
-                    <h1>Rauchmelder-Service<br>für ganz Europa</h1>
-                    <p class="subtitle">Professionelle Installation, Wartung & Verkauf von Rauchmeldern. TÜV-geprüft, 10
-                        Jahre Garantie, EU-zertifiziert.</p>
-                    <div class="hero-buttons">
-                        <a href="#kontaktformular" class="btn btn-primary btn-lg">Kostenlos anfragen</a>
-                        <a href="produkte.html" class="btn btn-outline btn-lg">Produkte entdecken</a>
-                    </div>
+            <div class="hero-content">
+                <span class="hero-badge">✓ Europaweit tätig</span>
+                <h1>Rauchmelder-Service für ganz Europa</h1>
+                <p class="subtitle">Normgerechte Installation, zuverlässige Wartung und professioneller Service – für
+                    Ihre Sicherheit. Wir betreuen Privathaushalte, Vermieter und Unternehmen in ganz Europa.</p>
+                <div class="hero-buttons">
+                    <a href="#kontakt" class="btn btn-primary btn-lg">Kostenlose Beratung anfragen</a>
+                    <a href="#leistungen" class="btn btn-secondary btn-lg">Mehr erfahren</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Badges -->
-    <section class="trust-badges-section">
-        <div class="container">
-            <div class="trust-badges-grid">
-                <div class="trust-badge-item">
-                    <div class="badge-icon">CE</div>
-                    <span>CE-Kennzeichnung</span>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon">TÜV</div>
-                    <span>TÜV geprüft</span>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon">VdS</div>
-                    <span>VdS-Anerkennung</span>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon">🇪🇺</div>
-                    <span>EU-Konformität</span>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon">10J</div>
-                    <span>10 Jahre Garantie</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Features Section -->
-    <section class="section">
+    <!-- 2. TRUST / WHY SECTION -->
+    <section class="section bg-light" id="warum">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Vorteile</span>
-                <h2>Ihre Vorteile</h2>
-                <p>Qualität und Sicherheit für Ihr Zuhause – europaweit.</p>
+                <h2>Warum sichere Rauchmelder so wichtig sind</h2>
+                <p>Rauchmelder retten Leben. Wir sorgen dafür, dass Ihre Geräte normgerecht installiert und regelmäßig
+                    gewartet werden.</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">✓</div>
-                    <h4>EU-zertifiziert</h4>
-                    <p>EN 14604 konform, in allen EU-Ländern zugelassen.</p>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="number">DIN</div>
+                    <h4>Normgerechte Installation</h4>
+                    <p>Montage nach DIN 14676 und europäischen Vorschriften</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h4>10 Jahre Batterie</h4>
-                    <p>Lithium-Batterie für 10 Jahre zuverlässigen Schutz.</p>
+                <div class="trust-card">
+                    <div class="number">27+</div>
+                    <h4>Länder in Europa</h4>
+                    <p>Europaweite Erfahrung und lokales Know-how</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">✔</div>
-                    <h4>TÜV-geprüft</h4>
-                    <p>Unabhängig zertifiziert für maximale Sicherheit.</p>
+                <div class="trust-card">
+                    <div class="number">48h</div>
+                    <h4>Schnelle Montage</h4>
+                    <p>Kurzfristige Terminvergabe und zügige Installation</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">◉</div>
-                    <h4>Smart-Home</h4>
-                    <p>Vernetzbar mit App-Benachrichtigung.</p>
+                <div class="trust-card">
+                    <div class="number">365</div>
+                    <h4>Tage Service</h4>
+                    <p>Wartung und Support rund ums Jahr verfügbar</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Service Coverage Section -->
-    <section class="section bg-gray">
+    <!-- 3. SERVICES / LEISTUNGEN -->
+    <section class="section" id="leistungen">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Servicegebiet</span>
-                <h2>Unser Service in Europa</h2>
-                <p>Professionelle Rauchmelder-Installation und Wartung in diesen Ländern.</p>
+                <h2>Unsere Leistungen im Überblick</h2>
+                <p>Von der Erstberatung bis zur regelmäßigen Wartung – wir bieten Ihnen den kompletten Service aus einer
+                    Hand.</p>
             </div>
-            <div class="countries-grid">
-                <div class="country-card">
-                    <div class="country-flag">🇩🇪</div>
-                    <h5>Deutschland</h5>
-                    <p>Flächendeckend verfügbar</p>
-                    <span class="country-status status-required">Verfügbar</span>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <div class="service-content">
+                        <h4>Planung & Beratung</h4>
+                        <p>Individuelle Bedarfsanalyse und Konzepterstellung für Ihr Objekt. Wir beraten Sie zu
+                            Gerätetypen, Positionierung und rechtlichen Anforderungen.</p>
+                        <a href="#kontakt" class="service-link">Details anfragen →</a>
+                    </div>
                 </div>
-                <div class="country-card">
-                    <div class="country-flag">🇦🇹</div>
-                    <h5>Österreich</h5>
-                    <p>Alle Bundesländer</p>
-                    <span class="country-status status-required">Verfügbar</span>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <div class="service-content">
+                        <h4>Installation & Montage</h4>
+                        <p>Fachgerechte Montage durch geschultes Personal. Normkonform nach DIN 14676 und lokalen
+                            Brandschutzvorschriften.</p>
+                        <a href="#kontakt" class="service-link">Details anfragen →</a>
+                    </div>
                 </div>
-                <div class="country-card">
-                    <div class="country-flag">🇨🇭</div>
-                    <h5>Schweiz</h5>
-                    <p>Gesamtes Gebiet</p>
-                    <span class="country-status status-required">Verfügbar</span>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <div class="service-content">
+                        <h4>Wartung & Prüfung</h4>
+                        <p>Regelmäßige Funktionsprüfung und Dokumentation. Wir erinnern Sie an fällige Termine und
+                            übernehmen die komplette Abwicklung.</p>
+                        <a href="#kontakt" class="service-link">Details anfragen →</a>
+                    </div>
                 </div>
-                <div class="country-card">
-                    <div class="country-flag">🇫🇷</div>
-                    <h5>Frankreich</h5>
-                    <p>Landesweit</p>
-                    <span class="country-status status-required">Verfügbar</span>
-                </div>
-                <div class="country-card">
-                    <div class="country-flag">🇳🇱</div>
-                    <h5>Niederlande</h5>
-                    <p>Vollständige Abdeckung</p>
-                    <span class="country-status status-required">Verfügbar</span>
-                </div>
-                <div class="country-card">
-                    <div class="country-flag">🇧🇪</div>
-                    <h5>Belgien</h5>
-                    <p>Alle Regionen</p>
-                    <span class="country-status status-required">Verfügbar</span>
-                </div>
-                <div class="country-card">
-                    <div class="country-flag">🇮🇹</div>
-                    <h5>Italien</h5>
-                    <p>Nord & Zentral</p>
-                    <span class="country-status status-partial">Teilweise</span>
-                </div>
-                <div class="country-card">
-                    <div class="country-flag">🇪🇸</div>
-                    <h5>Spanien</h5>
-                    <p>Großstädte</p>
-                    <span class="country-status status-partial">Teilweise</span>
-                </div>
-                <div class="country-card">
-                    <div class="country-flag">🇵🇱</div>
-                    <h5>Polen</h5>
-                    <p>Alle Woiwodschaften</p>
-                    <span class="country-status status-required">Verfügbar</span>
-                </div>
-                <div class="country-card">
-                    <div class="country-flag">🇧🇬</div>
-                    <h5>Bulgarien</h5>
-                    <p>Landesweit</p>
-                    <span class="country-status status-required">Verfügbar</span>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <div class="service-content">
+                        <h4>Austausch & Modernisierung</h4>
+                        <p>Ersatz veralteter Geräte und Upgrade auf moderne Funk- oder Smart-Home-Lösungen. Inklusive
+                            fachgerechter Entsorgung.</p>
+                        <a href="#kontakt" class="service-link">Details anfragen →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">500.000+</div>
-                    <div class="stat-label">Installierte Rauchmelder</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">27</div>
-                    <div class="stat-label">EU-Länder abgedeckt</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Jahre Erfahrung</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">99,8%</div>
-                    <div class="stat-label">Kundenzufriedenheit</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section - Prominent -->
-    <section class="contact-form-section" id="kontaktformular">
-        <div class="container">
-            <!-- Info Header - Centered Above Form -->
-            <div class="contact-header-centered">
-                <span class="section-badge">Jetzt anfragen</span>
-                <h2>Kostenlose Beratung</h2>
-                <p>Erhalten Sie ein unverbindliches Angebot für Ihre Rauchmelder-Installation oder Wartung. Wir
-                    antworten innerhalb von 24 Stunden.</p>
-
-                <div class="contact-benefits-row">
-                    <div class="benefit-item">
-                        <span class="benefit-icon">✓</span>
-                        <span>Kostenlose Erstberatung</span>
-                    </div>
-                    <div class="benefit-item">
-                        <span class="benefit-icon">✓</span>
-                        <span>Antwort innerhalb 24h</span>
-                    </div>
-                    <div class="benefit-item">
-                        <span class="benefit-icon">✓</span>
-                        <span>Individuelle Lösungen</span>
-                    </div>
-                    <div class="benefit-item">
-                        <span class="benefit-icon">✓</span>
-                        <span>EU-weiter Service</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Large Contact Form -->
-            <div class="contact-form-card contact-form-large">
-                <form class="contact-form" id="heroContactForm">
-                    <div class="form-grid-3">
-                        <div class="form-group">
-                            <label for="heroName">Name *</label>
-                            <input type="text" id="heroName" name="name" placeholder="Ihr vollständiger Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="heroEmail">E-Mail *</label>
-                            <input type="email" id="heroEmail" name="email" placeholder="ihre@email.de" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="heroPhone">Telefon</label>
-                            <input type="tel" id="heroPhone" name="phone" placeholder="+49 123 456789">
-                        </div>
-                    </div>
-                    <div class="form-grid-2">
-                        <div class="form-group">
-                            <label for="heroService">Was benötigen Sie?</label>
-                            <select id="heroService" name="service">
-                                <option value="">Bitte auswählen...</option>
-                                <option value="installation">Rauchmelder Installation</option>
-                                <option value="wartung">Wartung & Prüfung</option>
-                                <option value="kauf">Rauchmelder kaufen</option>
-                                <option value="beratung">Kostenlose Beratung</option>
-                                <option value="gewerbe">Gewerbliche Anfrage</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="heroUnits">Anzahl Wohneinheiten</label>
-                            <select id="heroUnits" name="units">
-                                <option value="">Bitte auswählen...</option>
-                                <option value="1-5">1-5 Wohnungen</option>
-                                <option value="6-20">6-20 Wohnungen</option>
-                                <option value="21-50">21-50 Wohnungen</option>
-                                <option value="51-100">51-100 Wohnungen</option>
-                                <option value="100+">Mehr als 100</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="heroMessage">Ihre Nachricht</label>
-                        <textarea id="heroMessage" name="message"
-                            placeholder="Beschreiben Sie Ihr Anliegen, z.B. Anzahl Räume, Gebäudeart, gewünschter Termin..."
-                            rows="5"></textarea>
-                    </div>
-                    <div class="form-submit-row">
-                        <button type="submit" class="btn btn-primary btn-xl">
-                            Kostenlose Anfrage senden →
-                        </button>
-                        <p class="form-privacy">🔒 Ihre Daten sind sicher. Keine Weitergabe an Dritte.</p>
-                </form>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- Testimonials Section -->
-    <section class="section">
+    <!-- 4. PRODUCTS / PRODUKTE -->
+    <section class="section bg-light" id="produkte">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Kundenstimmen</span>
-                <h2>Das sagen unsere Kunden</h2>
-                <p>Tausende zufriedene Kunden europaweit.</p>
+                <h2>Produkte & Rauchmelder-Typen</h2>
+                <p>Wir bieten hochwertige Rauchmelder führender Hersteller für jeden Einsatzbereich.</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">👨</div>
-                        <div class="testimonial-info">
-                            <h5>Thomas M.</h5>
-                            <span>München, Deutschland</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Schnelle Lieferung und einfache Installation. Sehr zufrieden!"</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">🔔</div>
+                    <h4>Standard-Rauchmelder</h4>
+                    <p>Zuverlässige Einzelgeräte mit 10-Jahres-Batterie für Wohnungen und Häuser.</p>
+                    <div class="product-price">ab 29 € / Stück</div>
+                    <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">👩</div>
-                        <div class="testimonial-info">
-                            <h5>Marie L.</h5>
-                            <span>Paris, Frankreich</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Excellent service! Je recommande Secu.li."</p>
+                <div class="product-card">
+                    <div class="product-icon">📡</div>
+                    <h4>Funk-Rauchmelder</h4>
+                    <p>Vernetzte Melder für größere Objekte. Bei Alarm werden alle Geräte aktiviert.</p>
+                    <div class="product-price">ab 59 € / Stück</div>
+                    <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">👨</div>
-                        <div class="testimonial-info">
-                            <h5>Jan V.</h5>
-                            <span>Amsterdam, Niederlande</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Zeer professionele service. Top Qualität!"</p>
+                <div class="product-card">
+                    <div class="product-icon">🏠</div>
+                    <h4>Smart-Home-Melder</h4>
+                    <p>WLAN-fähige Rauchmelder mit App-Benachrichtigung und Fernüberwachung.</p>
+                    <div class="product-price">ab 89 € / Stück</div>
+                    <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">⚠️</div>
+                    <h4>CO-Melder</h4>
+                    <p>Kohlenmonoxid-Warnmelder für Räume mit Verbrennungsanlagen oder Garagen.</p>
+                    <div class="product-price">ab 39 € / Stück</div>
+                    <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏢</div>
+                    <h4>Gewerbepakete</h4>
+                    <p>Komplettlösungen für Büros, Hotels und Gewerbeobjekte mit Volumenstaffel.</p>
+                    <div class="product-price">auf Anfrage</div>
+                    <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏘️</div>
+                    <h4>Vermieter-Pakete</h4>
+                    <p>Sorglos-Pakete für Mehrfamilienhäuser mit Installation, Wartung und Dokumentation.</p>
+                    <div class="product-price">auf Anfrage</div>
+                    <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section class="section bg-gray">
+    <!-- 5. PROCESS / ABLAUF -->
+    <section class="section" id="ablauf">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Qualität</span>
-                <h2>Zertifizierungen</h2>
-                <p>Unabhängig geprüft und zertifiziert.</p>
+                <h2>In drei Schritten zu sicheren Rauchmeldern</h2>
+                <p>Unkompliziert und schnell – so einfach funktioniert unser Service.</p>
             </div>
-            <div class="certifications">
-                <div class="certification-badge">
-                    <div class="certification-icon">CE</div>
-                    <span>CE-Kennzeichnung</span>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Kontakt & Beratung</h4>
+                    <p>Sie kontaktieren uns per Formular oder Telefon. Wir analysieren Ihren Bedarf und beraten Sie
+                        kostenlos.</p>
                 </div>
-                <div class="certification-badge">
-                    <div class="certification-icon">TÜV</div>
-                    <span>TÜV geprüft</span>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Planung & Angebot</h4>
+                    <p>Sie erhalten ein individuelles Angebot mit allen Details zu Produkten, Terminen und Kosten.</p>
                 </div>
-                <div class="certification-badge">
-                    <div class="certification-icon">VdS</div>
-                    <span>VdS-Anerkennung</span>
-                </div>
-                <div class="certification-badge">
-                    <div class="certification-icon">🇪🇺</div>
-                    <span>EU-Konformität</span>
-                </div>
-                <div class="certification-badge">
-                    <div class="certification-icon">Q</div>
-                    <span>Q-Label Qualität</span>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Montage & Wartung</h4>
+                    <p>Unsere Techniker installieren Ihre Rauchmelder und übernehmen auf Wunsch die regelmäßige Wartung.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section bg-gradient" style="color: var(--white);">
+    <!-- 6. COMPLIANCE / REFERENZEN -->
+    <section class="section bg-light" id="qualitaet">
         <div class="container">
-            <div class="section-header" style="color: var(--white);">
-                <h2 style="color: var(--white);">Jetzt Beratung anfordern</h2>
-                <p style="color: rgba(255,255,255,0.9);">Kontaktieren Sie uns für eine kostenlose Beratung.</p>
-                <div class="hero-buttons justify-center mt-8">
-                    <a href="produkte.html" class="btn btn-secondary btn-lg">Produkte ansehen</a>
-                    <a href="kontakt.html" class="btn btn-outline btn-lg">Kontakt</a>
+            <div class="compliance-content">
+                <div class="compliance-text">
+                    <h3>Qualität und Zuverlässigkeit</h3>
+                    <p>Wir arbeiten nach höchsten Standards und erfüllen alle europäischen <span
+                            class="highlight">Brandschutzvorschriften</span>. Unsere Techniker sind zertifiziert und
+                        regelmäßig geschult.</p>
+                    <p>Vertrauen Sie auf <span class="highlight">DIN-konforme</span> Installation und lückenlose
+                        Dokumentation für Ihre Unterlagen.</p>
+                    <a href="#kontakt" class="btn btn-primary">Jetzt Beratung anfragen</a>
+                </div>
+                <div class="compliance-list">
+                    <div class="compliance-item">
+                        <div class="compliance-icon">✓</div>
+                        <div>
+                            <h5>DIN 14676 konform</h5>
+                            <p>Installation nach aktueller Norm für Rauchwarnmelder</p>
+                        </div>
+                    </div>
+                    <div class="compliance-item">
+                        <div class="compliance-icon">✓</div>
+                        <div>
+                            <h5>Europaweite Projekte</h5>
+                            <p>Erfahrung in über 27 europäischen Ländern</p>
+                        </div>
+                    </div>
+                    <div class="compliance-item">
+                        <div class="compliance-icon">✓</div>
+                        <div>
+                            <h5>Zertifizierte Techniker</h5>
+                            <p>Geschultes Fachpersonal für alle Installationen</p>
+                        </div>
+                    </div>
+                    <div class="compliance-item">
+                        <div class="compliance-icon">✓</div>
+                        <div>
+                            <h5>Lückenlose Dokumentation</h5>
+                            <p>Protokolle und Nachweise für Ihre Unterlagen</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- 7. CONTACT / KONTAKT -->
+    <section class="contact-section" id="kontakt">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Kontakt aufnehmen</h2>
+                    <p>Fordern Sie jetzt eine kostenlose Beratung oder ein unverbindliches Angebot an. Wir melden uns
+                        innerhalb von 24 Stunden bei Ihnen.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <strong>E-Mail</strong>
+                                <span>info@secu.li</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div class="contact-item-text">
+                                <strong>Telefon</strong>
+                                <span>+49 800 123 4567</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🕐</div>
+                            <div class="contact-item-text">
+                                <strong>Erreichbarkeit</strong>
+                                <span>Mo–Fr, 8:00–18:00 Uhr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Firma (optional)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Land / Region *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Bitte wählen</option>
+                                    <option value="DE">Deutschland</option>
+                                    <option value="AT">Österreich</option>
+                                    <option value="CH">Schweiz</option>
+                                    <option value="PL">Polen</option>
+                                    <option value="BG">Bulgarien</option>
+                                    <option value="RS">Serbien</option>
+                                    <option value="HR">Kroatien</option>
+                                    <option value="OTHER">Anderes Land</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="units">Anzahl Einheiten</label>
+                                <select id="units" name="units">
+                                    <option value="">Bitte wählen</option>
+                                    <option value="1-5">1–5 Wohnungen</option>
+                                    <option value="6-20">6–20 Wohnungen</option>
+                                    <option value="21-50">21–50 Wohnungen</option>
+                                    <option value="50+">Über 50 Wohnungen</option>
+                                    <option value="gewerbe">Gewerbeobjekt</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Nachricht / Projektbeschreibung *</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    placeholder="Beschreiben Sie kurz Ihr Anliegen..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-lg">Anfrage absenden</button>
+                        </div>
+                        <p class="form-privacy">🔒 Ihre Daten werden vertraulich behandelt und nicht an Dritte
+                            weitergegeben.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 1rem;">
-
-                        <span>Secu.li</span>
-                    </a>
-                    <p>Ihr europäischer Partner für Brandschutz und Sicherheit. Qualität und Zuverlässigkeit seit über
-                        15 Jahren.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Facebook">f</a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
-                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
-                    </div>
+                    <a href="index.html" class="logo">Secu.li</a>
+                    <p>Professioneller Rauchmelder-Service für ganz Europa. Installation, Wartung und Beratung nach
+                        höchsten Standards.</p>
                 </div>
-                <div>
-                    <h4>Produkte</h4>
-                    <ul class="footer-links">
-                        <li><a href="produkte.html">Rauchmelder</a></li>
-                        <li><a href="produkte.html">CO-Melder</a></li>
-                        <li><a href="produkte.html">Funkrauchmelder</a></li>
-                        <li><a href="produkte.html">Komplettpakete</a></li>
+                <div class="footer-col">
+                    <h5>Leistungen</h5>
+                    <ul>
+                        <li><a href="#leistungen">Planung & Beratung</a></li>
+                        <li><a href="#leistungen">Installation</a></li>
+                        <li><a href="#leistungen">Wartung</a></li>
+                        <li><a href="#produkte">Produkte</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Service</h4>
-                    <ul class="footer-links">
-                        <li><a href="service.html">Installation</a></li>
-                        <li><a href="service.html">Wartung</a></li>
-                        <li><a href="service.html">B2B-Lösungen</a></li>
-                        <li><a href="kontakt.html">Support</a></li>
+                <div class="footer-col">
+                    <h5>Standorte</h5>
+                    <ul>
+                        <li><a href="standorte/deutschland/">Deutschland</a></li>
+                        <li><a href="standorte/bundeslaender/">Bundesländer</a></li>
+                        <li><a href="standorte/polen/">Polen</a></li>
+                        <li><a href="standorte/bulgarien/">Bulgarien</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Kontakt</h4>
-                    <ul class="footer-links">
-                        <li>📞 +49 800 123 4567</li>
-                        <li>✉️ info@secu.li</li>
-                        <li>💬 WhatsApp Support</li>
-                        <li><a href="kontakt.html">Kontaktformular</a></li>
+                <div class="footer-col">
+                    <h5>Kontakt</h5>
+                    <ul>
+                        <li><a href="mailto:info@secu.li">info@secu.li</a></li>
+                        <li><a href="tel:+498001234567">+49 800 123 4567</a></li>
+                        <li><a href="#kontakt">Anfrage senden</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2024 Secu.li. Alle Rechte vorbehalten.</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Impressum</a>
-                    <a href="#">Datenschutz</a>
-                    <a href="#">AGB</a>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
                 </div>
             </div>
         </div>
