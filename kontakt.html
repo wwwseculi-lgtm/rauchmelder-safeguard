@@ -19,7 +19,7 @@
     <header class="header" id="header">
         <div class="container">
             <a href="index.html" class="logo">
-                
+
                 <span>Secu.li</span>
             </a>
             <nav class="nav">
@@ -118,7 +118,28 @@
                             <input type="text" id="company" name="company" placeholder="Ihre Firma">
                         </div>
                     </div>
-                    <div class="form-grid-2">
+                    <div class="form-grid-3">
+                        <div class="form-group">
+                            <label for="country">Land *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Bitte auswählen...</option>
+                                <option value="Deutschland">🇩🇪 Deutschland</option>
+                                <option value="Österreich">🇦🇹 Österreich</option>
+                                <option value="Schweiz">🇨🇭 Schweiz</option>
+                                <option value="Polen">🇵🇱 Polen</option>
+                                <option value="Bulgarien">🇧🇬 Bulgarien</option>
+                                <option value="Frankreich">🇫🇷 Frankreich</option>
+                                <option value="Niederlande">🇳🇱 Niederlande</option>
+                                <option value="Belgien">🇧🇪 Belgien</option>
+                                <option value="Italien">🇮🇹 Italien</option>
+                                <option value="Spanien">🇪🇸 Spanien</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Stadt / Ort *</label>
+                            <input type="text" id="city" name="city" placeholder="z.B. Berlin, München, Wien..."
+                                required>
+                        </div>
                         <div class="form-group">
                             <label for="subject">Betreff *</label>
                             <select id="subject" name="subject" required>
@@ -132,6 +153,8 @@
                                 <option value="other">Sonstiges</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="form-grid-2">
                         <div class="form-group">
                             <label for="units">Anzahl Wohneinheiten</label>
                             <select id="units" name="units">
@@ -141,6 +164,17 @@
                                 <option value="21-50">21-50 Wohnungen</option>
                                 <option value="51-100">51-100 Wohnungen</option>
                                 <option value="100+">Mehr als 100</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Gewünschter Zeitraum</label>
+                            <select id="time" name="time">
+                                <option value="">Bitte auswählen...</option>
+                                <option value="asap">So schnell wie möglich</option>
+                                <option value="1week">Innerhalb 1 Woche</option>
+                                <option value="2weeks">Innerhalb 2 Wochen</option>
+                                <option value="1month">Innerhalb 1 Monat</option>
+                                <option value="flexible">Flexibel</option>
                             </select>
                         </div>
                     </div>
@@ -256,7 +290,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 1rem;">
-                        
+
                         <span>Secu.li</span>
                     </a>
                     <p>Ihr europäischer Partner für Brandschutz und Sicherheit. Qualität und Zuverlässigkeit seit über
