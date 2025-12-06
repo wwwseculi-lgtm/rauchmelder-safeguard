@@ -19,7 +19,7 @@
     <header class="header" id="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <div class="logo-icon">🔥</div>
+                
                 <span>Secu.li</span>
             </a>
             <nav class="nav">
@@ -48,139 +48,149 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="hero" style="min-height: 50vh;">
+    <section class="hero hero-simple">
         <div class="container">
-            <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-content hero-centered">
                 <div class="hero-text">
-                    <span class="section-badge"
-                        style="background: rgba(255,255,255,0.2); color: var(--white);">Kontakt</span>
+                    <span class="hero-badge-top">📞 Wir sind für Sie da</span>
                     <h1>Kontaktieren Sie uns</h1>
-                    <p class="subtitle" style="margin: 0 auto;">Unser Team steht Ihnen EU-weit zur Verfügung.</p>
+                    <p class="subtitle">Unser Team steht Ihnen EU-weit zur Verfügung. Kostenlose Beratung für Privat-
+                        und Geschäftskunden.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section">
+    <!-- Contact Form Section - Large -->
+    <section class="contact-form-section">
         <div class="container">
-            <div class="contact-section">
-                <div class="contact-info">
-                    <h3>Kontaktmöglichkeiten</h3>
+            <!-- Info Header - Centered Above Form -->
+            <div class="contact-header-centered">
+                <span class="section-badge">Jetzt anfragen</span>
+                <h2>Kostenlose Beratung anfordern</h2>
+                <p>Erhalten Sie ein unverbindliches Angebot für Ihre Rauchmelder-Installation oder Wartung. Wir
+                    antworten innerhalb von 24 Stunden.</p>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h5>EU-weite Hotline</h5>
-                            <p><strong>+49 800 123 4567</strong><br>Kostenlos aus allen EU-Ländern<br>Mo-Fr 8:00 - 18:00
-                                Uhr</p>
-                        </div>
+                <div class="contact-benefits-row">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        <span>Kostenlose Erstberatung</span>
                     </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">💬</div>
-                        <div>
-                            <h5>WhatsApp Business</h5>
-                            <p><a href="https://wa.me/4915012345678"
-                                    style="color: var(--primary); font-weight: 600;">+49 150 1234 5678</a><br>Schnelle
-                                Antworten per Chat<br>Mo-Fr 9:00 - 17:00 Uhr</p>
-                        </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        <span>Antwort innerhalb 24h</span>
                     </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
-                        <div>
-                            <h5>E-Mail</h5>
-                            <p><a href="mailto:info@secu.li"
-                                    style="color: var(--primary);">info@secu.li</a><br>Antwort innerhalb von
-                                24 Stunden</p>
-                        </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        <span>Individuelle Lösungen</span>
                     </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">🏢</div>
-                        <div>
-                            <h5>Hauptsitz</h5>
-                            <p>Secu.li GmbH<br>Brandschutzallee 42<br>80331 München, Deutschland</p>
-                        </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✓</span>
+                        <span>EU-weiter Service</span>
                     </div>
                 </div>
+            </div>
 
-                <div class="contact-form">
-                    <h3 style="margin-bottom: 1.5rem;">Anfrage senden</h3>
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">Vorname *</label>
-                                <input type="text" id="firstName" name="firstName" required placeholder="Ihr Vorname">
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Nachname *</label>
-                                <input type="text" id="lastName" name="lastName" required placeholder="Ihr Nachname">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">E-Mail *</label>
-                                <input type="email" id="email" name="email" required placeholder="ihre@email.de">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Telefon</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
-                            </div>
-                        </div>
-
+            <!-- Large Contact Form -->
+            <div class="contact-form-card contact-form-large">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-grid-2">
                         <div class="form-group">
-                            <label for="country">Land *</label>
-                            <select id="country" name="country" required>
-                                <option value="">Bitte wählen...</option>
-                                <option value="DE">Deutschland</option>
-                                <option value="AT">Österreich</option>
-                                <option value="CH">Schweiz</option>
-                                <option value="FR">Frankreich</option>
-                                <option value="NL">Niederlande</option>
-                                <option value="BE">Belgien</option>
-                                <option value="IT">Italien</option>
-                                <option value="ES">Spanien</option>
-                                <option value="PL">Polen</option>
-                                <option value="CZ">Tschechien</option>
-                                <option value="OTHER">Anderes EU-Land</option>
-                            </select>
+                            <label for="firstName">Vorname *</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Ihr Vorname" required>
                         </div>
-
+                        <div class="form-group">
+                            <label for="lastName">Nachname *</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Ihr Nachname" required>
+                        </div>
+                    </div>
+                    <div class="form-grid-3">
+                        <div class="form-group">
+                            <label for="email">E-Mail Adresse *</label>
+                            <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefonnummer</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Firma (optional)</label>
+                            <input type="text" id="company" name="company" placeholder="Ihre Firma">
+                        </div>
+                    </div>
+                    <div class="form-grid-2">
                         <div class="form-group">
                             <label for="subject">Betreff *</label>
                             <select id="subject" name="subject" required>
-                                <option value="">Bitte wählen...</option>
-                                <option value="products">Produktanfrage</option>
-                                <option value="installation">Installationsservice</option>
-                                <option value="maintenance">Wartung</option>
-                                <option value="b2b">B2B-Anfrage</option>
+                                <option value="">Bitte auswählen...</option>
+                                <option value="installation">Rauchmelder Installation</option>
+                                <option value="wartung">Wartung & Prüfung</option>
+                                <option value="kauf">Rauchmelder kaufen</option>
+                                <option value="beratung">Kostenlose Beratung</option>
+                                <option value="b2b">B2B / Gewerbliche Anfrage</option>
                                 <option value="support">Technischer Support</option>
                                 <option value="other">Sonstiges</option>
                             </select>
                         </div>
-
                         <div class="form-group">
-                            <label for="message">Ihre Nachricht *</label>
-                            <textarea id="message" name="message" required
-                                placeholder="Wie können wir Ihnen helfen?"></textarea>
+                            <label for="units">Anzahl Wohneinheiten</label>
+                            <select id="units" name="units">
+                                <option value="">Bitte auswählen...</option>
+                                <option value="1-5">1-5 Wohnungen</option>
+                                <option value="6-20">6-20 Wohnungen</option>
+                                <option value="21-50">21-50 Wohnungen</option>
+                                <option value="51-100">51-100 Wohnungen</option>
+                                <option value="100+">Mehr als 100</option>
+                            </select>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ihre Nachricht *</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Beschreiben Sie Ihr Anliegen, z.B. Anzahl Räume, Gebäudeart, gewünschter Termin..."
+                            rows="6"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span>Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung
+                                meiner Daten zu. *</span>
+                        </label>
+                    </div>
+                    <div class="form-submit-row">
+                        <button type="submit" class="btn btn-primary btn-xl">
+                            Kostenlose Anfrage senden →
+                        </button>
+                        <p class="form-privacy">🔒 Ihre Daten sind sicher. Keine Weitergabe an Dritte.</p>
+                    </div>
+                </form>
+            </div>
 
-                        <div class="form-group">
-                            <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer;">
-                                <input type="checkbox" id="privacy" name="privacy" required
-                                    style="width: auto; margin-top: 0.25rem;">
-                                <span style="font-size: 0.875rem; color: var(--gray-600);">Ich habe die <a href="#"
-                                        style="color: var(--primary);">Datenschutzerklärung</a> gelesen und stimme der
-                                    Verarbeitung meiner Daten zu. *</span>
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Anfrage
-                            absenden</button>
-                    </form>
+            <!-- Direct Contact Options -->
+            <div class="contact-options-row">
+                <div class="contact-option">
+                    <span class="contact-option-icon">📞</span>
+                    <div>
+                        <strong>EU-weite Hotline</strong>
+                        <a href="tel:+498001234567">+49 800 123 4567</a>
+                        <span>Kostenlos, Mo-Fr 8-18 Uhr</span>
+                    </div>
+                </div>
+                <div class="contact-option">
+                    <span class="contact-option-icon">💬</span>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <a href="https://wa.me/4915012345678">+49 150 1234 5678</a>
+                        <span>Schnelle Antworten per Chat</span>
+                    </div>
+                </div>
+                <div class="contact-option">
+                    <span class="contact-option-icon">✉️</span>
+                    <div>
+                        <strong>E-Mail</strong>
+                        <a href="mailto:info@secu.li">info@secu.li</a>
+                        <span>Antwort innerhalb 24h</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,7 +256,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 1rem;">
-                        <div class="logo-icon">🔥</div>
+                        
                         <span>Secu.li</span>
                     </a>
                     <p>Ihr europäischer Partner für Brandschutz und Sicherheit. Qualität und Zuverlässigkeit seit über
