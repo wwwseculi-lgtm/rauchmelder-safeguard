@@ -141,23 +141,180 @@
         <a href="kontakt.html">Kontakt</a>
     </nav>
 
-    <!-- Hero Section - Clean & Simple -->
     <section class="hero hero-simple">
         <div class="container">
             <div class="hero-content hero-centered">
                 <div class="hero-text">
+                    <!-- URGENCY BADGE -->
+                    <div class="hero-urgency-badge">
+                        <span class="urgency-pulse"></span>
+                        🔥 NUR NOCH 7 TERMINE IM DEZEMBER FREI!
+                    </div>
                     <span class="hero-badge-top">🔒 Ihr Partner für Brandschutz in Europa</span>
                     <h1>Rauchmelder-Service<br>für ganz Europa</h1>
                     <p class="subtitle">Professionelle Installation, Wartung & Verkauf von Rauchmeldern. TÜV-geprüft, 10
                         Jahre Garantie, EU-zertifiziert.</p>
+
+                    <!-- SPECIAL OFFER BOX -->
+                    <div class="special-offer-box">
+                        <div class="offer-badge">🎁 DEZEMBER-SPECIAL</div>
+                        <p><strong>Kostenlose Beratung + 15% Rabatt</strong> auf alle Installationen!</p>
+                        <small>✓ Nur noch heute gültig ✓ Begrenzte Plätze</small>
+                    </div>
+
                     <div class="hero-buttons">
-                        <a href="#kontaktformular" class="btn btn-primary btn-lg">Kostenlos anfragen</a>
-                        <a href="produkte.html" class="btn btn-outline btn-lg">Produkte entdecken</a>
+                        <a href="#kontaktformular" class="btn btn-primary btn-lg btn-pulse">
+                            ➔ Jetzt Termin sichern (kostenlos)
+                        </a>
+                        <a href="tel:+498001234567" class="btn btn-outline btn-lg">
+                            📞 Sofort anrufen
+                        </a>
+                    </div>
+
+                    <!-- TRUST INDICATORS -->
+                    <div class="hero-trust">
+                        <span>⭐⭐⭐⭐⭐ 4.9/5 (847 Bewertungen)</span>
+                        <span>✓ Antwort in 24h</span>
+                        <span>✓ 100% kostenlos</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        .hero-urgency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #DC2626, #B91C1C);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            animation: shake 3s ease-in-out infinite;
+        }
+
+        .urgency-pulse {
+            width: 10px;
+            height: 10px;
+            background: #FCD34D;
+            border-radius: 50%;
+            animation: urgency-blink 1s infinite;
+        }
+
+        @keyframes urgency-blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform: translateX(-2px);
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                transform: translateX(2px);
+            }
+        }
+
+        .special-offer-box {
+            background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+            border: 2px dashed #F59E0B;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .offer-badge {
+            display: inline-block;
+            background: #F59E0B;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .special-offer-box p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #92400E;
+        }
+
+        .special-offer-box small {
+            color: #B45309;
+            font-size: 0.9rem;
+        }
+
+        .btn-pulse {
+            animation: btn-pulse 2s infinite;
+        }
+
+        @keyframes btn-pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(196, 30, 58, 0.7);
+            }
+
+            50% {
+                box-shadow: 0 0 0 15px rgba(196, 30, 58, 0);
+            }
+        }
+
+        .hero-trust {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #4B5563;
+        }
+
+        .hero-trust span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-trust {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-urgency-badge {
+                font-size: 0.8rem;
+                padding: 6px 15px;
+            }
+        }
+    </style>
 
     <!-- Trust Badges -->
     <section class="trust-badges-section">
