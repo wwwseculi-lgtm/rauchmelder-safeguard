@@ -1,17 +1,185 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Optische Rauchmelder: Die häufigste Art von Rauchmeldern. Funktionsweise, Vorteile und Einsatzgebiete erklärt.">
+    <meta name="description" content="Die häufigste und zuverlässigste Art von Rauchmeldern für den Wohnbereich.">
     <title>Optische Rauchmelder | Funktionsweise & Vorteile | Secu.li</title>
-    <link rel="canonical" href="https://secu.li/optische-rauchmelder.html">
     <link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#C41E3A">
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 140px 20px 80px;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .page-hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .content-section h2 {
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+        .content-section h2:first-child {
+            margin-top: 0;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #10B981;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #047857;
+        }
+        .warning-box {
+            background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #F59E0B;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #C41E3A, #991B1B);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        .cta-box p {
+            opacity: 0.95;
+        }
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card-pro {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .feature-card-pro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .feature-card-pro .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .feature-card-pro h4 {
+            margin: 0 0 10px;
+            color: #1a1a1a;
+        }
+        .feature-card-pro p {
+            margin: 0;
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+        .check-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .check-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10B981;
+            font-weight: bold;
+        }
+        .cross-list li:before {
+            content: "✗";
+            color: #DC2626;
+        }
+        .breadcrumb {
+            display: flex;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .related-link {
+            display: block;
+            padding: 20px;
+            background: #F9FAFB;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .related-link:hover {
+            background: var(--primary);
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+            .page-hero {
+                padding: 120px 20px 60px;
+            }
+        }
+    </style>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -27,74 +195,101 @@
             </nav>
         </div>
     </header>
-
-    <section class="section" style="padding-top: 120px;">
-        <div class="container" style="max-width: 900px;">
-            <nav class="breadcrumb" style="margin-bottom: 20px;">
-                <a href="index.html">Startseite</a> › <a href="ratgeber.html">Ratgeber</a> › <span>Optische
-                    Rauchmelder</span>
-            </nav>
-
-            <h1>Optische Rauchmelder</h1>
-            <p class="subtitle">Die häufigste und zuverlässigste Art von Rauchmeldern für den Wohnbereich.</p>
-
-            <h2>Wie funktioniert ein optischer Rauchmelder?</h2>
-            <p>Optische Rauchmelder (auch fotoelektrische Rauchmelder genannt) nutzen das
-                <strong>Streulichtprinzip</strong>:</p>
-            <ol>
-                <li>Eine LED sendet kontinuierlich einen Lichtstrahl in die Rauchkammer</li>
-                <li>Normalerweise trifft dieses Licht nicht auf den Sensor</li>
-                <li>Bei Rauch werden die Lichtpartikel gestreut</li>
-                <li>Das gestreute Licht trifft auf den Fotosensor</li>
-                <li>Der Alarm wird ausgelöst</li>
-            </ol>
-
-            <h2>Vorteile optischer Rauchmelder</h2>
-            <ul>
-                <li>✓ <strong>Keine radioaktiven Stoffe</strong> - umweltfreundlich und sicher</li>
-                <li>✓ <strong>Reagieren früh</strong> auf sichtbaren Rauch (Schwelbrände)</li>
-                <li>✓ <strong>Wenige Fehlalarme</strong> bei korrekter Installation</li>
-                <li>✓ <strong>Wartungsarm</strong> - lange Lebensdauer</li>
-                <li>✓ <strong>Günstig</strong> - erschwinglicher Preis</li>
-            </ul>
-
-            <h2>Ideale Einsatzorte</h2>
-            <ul>
-                <li>🛏️ Schlafzimmer</li>
-                <li>👶 Kinderzimmer</li>
-                <li>🚪 Flure und Treppenhäuser</li>
-                <li>🛋️ Wohnzimmer</li>
-                <li>🏢 Büros</li>
-            </ul>
-
-            <h2>Nicht geeignet für</h2>
-            <ul>
-                <li>❌ Küchen (wegen Kochdämpfen)</li>
-                <li>❌ Badezimmer (wegen Wasserdampf)</li>
-                <li>❌ Garagen (wegen Abgasen)</li>
-                <li>❌ Staubige Werkstätten</li>
-            </ul>
-
-            <div style="background: #F0FDF4; padding: 30px; border-radius: 15px; margin-top: 40px;">
-                <h3>💡 Unsere Empfehlung</h3>
-                <p>Für die meisten Wohnräume ist der optische Rauchmelder die beste Wahl. Wir empfehlen Modelle mit dem
-                    <a href="zertifikate.html">Q-Label</a> für höchste Qualität.</p>
+    
+    <section class="page-hero">
+        <nav class="breadcrumb">
+            <a href="index.html">Startseite</a> › <a href="ratgeber.html">Ratgeber</a> › <span>Optische Rauchmelder</span>
+        </nav>
+        <span class="hero-badge">📡 Meistverwendet</span>
+        <h1>Optische Rauchmelder</h1>
+        <p class="subtitle">Die häufigste und zuverlässigste Art von Rauchmeldern für den Wohnbereich.</p>
+    </section>
+    
+    <div class="content-section">
+        
+        <h2>Wie funktioniert ein optischer Rauchmelder?</h2>
+        <p>Optische Rauchmelder nutzen das <strong>Streulichtprinzip</strong> zur Raucherkennung:</p>
+        
+        <div class="feature-cards">
+            <div class="feature-card-pro">
+                <div class="icon">💡</div>
+                <h4>1. LED sendet Licht</h4>
+                <p>Eine LED sendet kontinuierlich einen Lichtstrahl in die Rauchkammer.</p>
             </div>
-
-            <h2>Weitere Rauchmelder-Arten</h2>
-            <ul>
-                <li><a href="ionisationsmelder.html">Ionisationsmelder</a></li>
-                <li><a href="thermomelder.html">Thermomelder</a></li>
-                <li><a href="funkrauchmelder.html">Funkvernetzte Rauchmelder</a></li>
-            </ul>
-
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="kontakt.html" class="btn btn-primary">Beratung anfragen</a>
-                <a href="ratgeber.html" class="btn btn-outline">Zurück zum Ratgeber</a>
+            <div class="feature-card-pro">
+                <div class="icon">🌫️</div>
+                <h4>2. Rauch streut Licht</h4>
+                <p>Bei Rauch werden die Lichtpartikel in alle Richtungen gestreut.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">📸</div>
+                <h4>3. Sensor erkennt</h4>
+                <p>Das gestreute Licht trifft auf den Fotosensor.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🔔</div>
+                <h4>4. Alarm!</h4>
+                <p>Der Rauchmelder löst einen lauten Alarm aus.</p>
             </div>
         </div>
-    </section>
+        
+        <h2>Vorteile optischer Rauchmelder</h2>
+        <ul class="check-list">
+            <li><strong>Keine radioaktiven Stoffe</strong> - umweltfreundlich und sicher</li>
+            <li><strong>Reagieren früh</strong> auf sichtbaren Rauch (Schwelbrände)</li>
+            <li><strong>Wenige Fehlalarme</strong> bei korrekter Installation</li>
+            <li><strong>Wartungsarm</strong> - lange Lebensdauer</li>
+            <li><strong>Günstig</strong> - erschwinglicher Preis ab 20€</li>
+        </ul>
+        
+        <h2>Ideale Einsatzorte</h2>
+        <div class="feature-cards">
+            <div class="feature-card-pro">
+                <div class="icon">🛏️</div>
+                <h4>Schlafzimmer</h4>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">👶</div>
+                <h4>Kinderzimmer</h4>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🚪</div>
+                <h4>Flure</h4>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🛋️</div>
+                <h4>Wohnzimmer</h4>
+            </div>
+        </div>
+        
+        <h2>Nicht geeignet für</h2>
+        <ul class="check-list cross-list">
+            <li>Küchen (wegen Kochdämpfen)</li>
+            <li>Badezimmer (wegen Wasserdampf)</li>
+            <li>Garagen (wegen Abgasen)</li>
+            <li>Staubige Werkstätten</li>
+        </ul>
+        
+        <div class="info-box">
+            <h3>💡 Unsere Empfehlung</h3>
+            <p>Für die meisten Wohnräume ist der optische Rauchmelder die beste Wahl. Wir empfehlen Modelle mit dem <a href="zertifikate.html">Q-Label</a> für höchste Qualität.</p>
+        </div>
+        
+        <h2>Weitere Rauchmelder-Arten</h2>
+        <div class="related-links">
+            <a href="ionisationsmelder.html" class="related-link">Ionisationsmelder →</a>
+            <a href="thermomelder.html" class="related-link">Thermomelder →</a>
+            <a href="funkrauchmelder.html" class="related-link">Funkvernetzte Melder →</a>
+        </div>
+        
+        <div class="cta-box">
+            <h3>Professionelle Installation gewünscht?</h3>
+            <p>Wir installieren und warten Ihre optischen Rauchmelder nach DIN 14676.</p>
+            <a href="kontakt.html" class="btn" style="background: white; color: var(--primary);">Kostenlose Beratung</a>
+        </div>
 
+    </div>
+    
     <footer class="footer">
         <div class="container" style="text-align: center; padding: 30px;">
             <p>&copy; 2024 Secu.li - Optische Rauchmelder</p>
@@ -103,5 +298,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>

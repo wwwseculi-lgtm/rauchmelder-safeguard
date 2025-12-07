@@ -1,17 +1,185 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Ionisationsmelder: Wie sie funktionieren, Vor- und Nachteile. Warum sie in Deutschland selten sind.">
+    <meta name="description" content="Reagieren auf unsichtbare Rauchpartikel - in Deutschland jedoch selten im Einsatz.">
     <title>Ionisationsmelder | Funktionsweise & Info | Secu.li</title>
-    <link rel="canonical" href="https://secu.li/ionisationsmelder.html">
     <link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#C41E3A">
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 140px 20px 80px;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .page-hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .content-section h2 {
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+        .content-section h2:first-child {
+            margin-top: 0;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #10B981;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #047857;
+        }
+        .warning-box {
+            background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #F59E0B;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #C41E3A, #991B1B);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        .cta-box p {
+            opacity: 0.95;
+        }
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card-pro {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .feature-card-pro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .feature-card-pro .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .feature-card-pro h4 {
+            margin: 0 0 10px;
+            color: #1a1a1a;
+        }
+        .feature-card-pro p {
+            margin: 0;
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+        .check-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .check-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10B981;
+            font-weight: bold;
+        }
+        .cross-list li:before {
+            content: "✗";
+            color: #DC2626;
+        }
+        .breadcrumb {
+            display: flex;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .related-link {
+            display: block;
+            padding: 20px;
+            background: #F9FAFB;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .related-link:hover {
+            background: var(--primary);
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+            .page-hero {
+                padding: 120px 20px 60px;
+            }
+        }
+    </style>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -27,73 +195,88 @@
             </nav>
         </div>
     </header>
-
-    <section class="section" style="padding-top: 120px;">
-        <div class="container" style="max-width: 900px;">
-            <nav class="breadcrumb" style="margin-bottom: 20px;">
-                <a href="index.html">Startseite</a> › <a href="ratgeber.html">Ratgeber</a> ›
-                <span>Ionisationsmelder</span>
-            </nav>
-
-            <h1>Ionisationsmelder</h1>
-            <p class="subtitle">Reagieren auf unsichtbare Rauchpartikel - in Deutschland jedoch selten im Einsatz.</p>
-
-            <div
-                style="background: #FEF3C7; padding: 20px; border-radius: 10px; margin-bottom: 30px; border-left: 4px solid #F59E0B;">
-                <strong>⚠️ Hinweis:</strong> Ionisationsmelder sind in Deutschland aufgrund ihrer radioaktiven
-                Komponenten kaum erhältlich und erfordern eine spezielle Entsorgung.
+    
+    <section class="page-hero">
+        <nav class="breadcrumb">
+            <a href="index.html">Startseite</a> › <a href="ratgeber.html">Ratgeber</a> › <span>Ionisationsmelder</span>
+        </nav>
+        <span class="hero-badge">⚠️ In DE selten</span>
+        <h1>Ionisationsmelder</h1>
+        <p class="subtitle">Reagieren auf unsichtbare Rauchpartikel - in Deutschland jedoch selten im Einsatz.</p>
+    </section>
+    
+    <div class="content-section">
+        
+        <div class="warning-box">
+            <strong>⚠️ Wichtiger Hinweis</strong>
+            <p style="margin: 10px 0 0;">Ionisationsmelder sind in Deutschland aufgrund ihrer radioaktiven Komponenten kaum erhältlich und erfordern eine spezielle Entsorgung.</p>
+        </div>
+        
+        <h2>Funktionsweise</h2>
+        <p>Ionisationsmelder nutzen eine kleine Menge radioaktives Material (Americium-241):</p>
+        
+        <div class="feature-cards">
+            <div class="feature-card-pro">
+                <div class="icon">☢️</div>
+                <h4>1. Ionisation</h4>
+                <p>Radioaktives Element ionisiert die Luft in der Messkammer.</p>
             </div>
-
-            <h2>Wie funktioniert ein Ionisationsmelder?</h2>
-            <p>Ionisationsmelder nutzen eine kleine Menge radioaktives Material (meist Americium-241):</p>
-            <ol>
-                <li>Das radioaktive Element ionisiert die Luft in der Messkammer</li>
-                <li>Zwischen zwei Elektroden fließt ein konstanter Strom</li>
-                <li>Rauchpartikel absorbieren die Ionen und unterbrechen den Strom</li>
-                <li>Die Stromunterbrechung löst den Alarm aus</li>
-            </ol>
-
-            <h2>Vorteile</h2>
-            <ul>
-                <li>✓ Reagieren sehr schnell auf offene Flammen</li>
-                <li>✓ Erkennen auch unsichtbare Rauchpartikel</li>
-                <li>✓ Sehr empfindlich</li>
-            </ul>
-
-            <h2>Nachteile</h2>
-            <ul>
-                <li>❌ Enthalten radioaktives Material</li>
-                <li>❌ Spezielle Entsorgung erforderlich</li>
-                <li>❌ In Deutschland kaum erhältlich</li>
-                <li>❌ Häufige Fehlalarme bei Kochdämpfen</li>
-                <li>❌ Weniger wirksam bei Schwelbränden</li>
-            </ul>
-
-            <h2>Rechtliche Situation in Deutschland</h2>
-            <p>Ionisationsmelder unterliegen in Deutschland den Vorschriften der Strahlenschutzverordnung. Sie dürfen
-                nur von zugelassenen Stellen verkauft und entsorgt werden. Für den privaten Haushalt gibt es deutlich
-                bessere Alternativen.</p>
-
-            <div style="background: #F0FDF4; padding: 30px; border-radius: 15px; margin-top: 40px;">
-                <h3>💡 Unsere Empfehlung</h3>
-                <p>Für den Hausgebrauch empfehlen wir <a href="optische-rauchmelder.html">optische Rauchmelder</a>. Sie
-                    bieten vergleichbare Sicherheit ohne die Nachteile radioaktiver Komponenten.</p>
+            <div class="feature-card-pro">
+                <div class="icon">⚡</div>
+                <h4>2. Stromfluss</h4>
+                <p>Zwischen Elektroden fließt ein konstanter Strom.</p>
             </div>
-
-            <h2>Weitere Rauchmelder-Arten</h2>
-            <ul>
-                <li><a href="optische-rauchmelder.html">Optische Rauchmelder</a></li>
-                <li><a href="thermomelder.html">Thermomelder</a></li>
-                <li><a href="funkrauchmelder.html">Funkvernetzte Rauchmelder</a></li>
-            </ul>
-
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="kontakt.html" class="btn btn-primary">Beratung anfragen</a>
-                <a href="ratgeber.html" class="btn btn-outline">Zurück zum Ratgeber</a>
+            <div class="feature-card-pro">
+                <div class="icon">🌫️</div>
+                <h4>3. Unterbrechung</h4>
+                <p>Rauchpartikel absorbieren Ionen, Strom sinkt.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🔔</div>
+                <h4>4. Alarm</h4>
+                <p>Stromabfall löst Alarm aus.</p>
             </div>
         </div>
-    </section>
+        
+        <h2>Vorteile</h2>
+        <ul class="check-list">
+            <li>Reagieren sehr schnell auf offene Flammen</li>
+            <li>Erkennen auch unsichtbare Rauchpartikel</li>
+            <li>Sehr empfindlich</li>
+        </ul>
+        
+        <h2>Nachteile</h2>
+        <ul class="check-list cross-list">
+            <li>Enthalten radioaktives Material</li>
+            <li>Spezielle Entsorgung erforderlich</li>
+            <li>In Deutschland kaum erhältlich</li>
+            <li>Häufige Fehlalarme bei Kochdämpfen</li>
+            <li>Weniger wirksam bei Schwelbränden</li>
+        </ul>
+        
+        <h2>Rechtliche Situation in Deutschland</h2>
+        <p>Ionisationsmelder unterliegen der <strong>Strahlenschutzverordnung</strong>. Sie dürfen nur von zugelassenen Stellen verkauft und entsorgt werden.</p>
+        
+        <div class="info-box">
+            <h3>💡 Unsere Empfehlung</h3>
+            <p>Für den Hausgebrauch empfehlen wir <a href="optische-rauchmelder.html">optische Rauchmelder</a>. Sie bieten vergleichbare Sicherheit ohne die Nachteile radioaktiver Komponenten.</p>
+        </div>
+        
+        <h2>Weitere Rauchmelder-Arten</h2>
+        <div class="related-links">
+            <a href="optische-rauchmelder.html" class="related-link">Optische Rauchmelder →</a>
+            <a href="thermomelder.html" class="related-link">Thermomelder →</a>
+            <a href="funkrauchmelder.html" class="related-link">Funkvernetzte Melder →</a>
+        </div>
+        
+        <div class="cta-box">
+            <h3>Beratung zu Rauchmelder-Alternativen?</h3>
+            <p>Wir helfen Ihnen, den richtigen Rauchmelder für Ihre Bedürfnisse zu finden.</p>
+            <a href="kontakt.html" class="btn" style="background: white; color: var(--primary);">Jetzt beraten lassen</a>
+        </div>
 
+    </div>
+    
     <footer class="footer">
         <div class="container" style="text-align: center; padding: 30px;">
             <p>&copy; 2024 Secu.li - Ionisationsmelder</p>
@@ -102,5 +285,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>
