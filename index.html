@@ -147,7 +147,7 @@
                 <div class="hero-text">
                     <span class="hero-badge-top">🔒 Ihr Partner für Brandschutz in Europa</span>
                     <h1>Rauchmelder-Service<br>für ganz Europa</h1>
-<p class="subtitle">Professionelle Installation, Wartung & Verkauf von Rauchmeldern. TÜV-geprüft, 10
+                    <p class="subtitle">Professionelle Installation, Wartung & Verkauf von Rauchmeldern. TÜV-geprüft, 10
                         Jahre Garantie, EU-zertifiziert.</p>
 
                     <div class="hero-buttons">
@@ -302,90 +302,300 @@
                 padding: 6px 15px;
             }
         }
-    
-/* Breadcrumb Navigation */
-.breadcrumb { padding: 15px 0; font-size: 0.9rem; color: #6B7280; }
-.breadcrumb a { color: #C41E3A; text-decoration: none; }
-.breadcrumb a:hover { text-decoration: underline; }
 
-/* Tipps & Mehrwert Sections */
-.seo-tipps, .mehrwert-section { background: #F9FAFB; padding: 30px; border-radius: 15px; margin: 30px 0; }
-.numbered-list { padding-left: 20px; }
-.numbered-list li { padding: 10px 0; border-bottom: 1px solid #E5E7EB; }
-.numbered-list li:last-child { border-bottom: none; }
-.checklist-detailed { list-style: none; padding: 0; }
-.checklist-detailed li { padding: 8px 0; }
+        /* Breadcrumb Navigation */
+        .breadcrumb {
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
 
-/* Facts Grid */
-.facts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 20px; }
-.fact-item { text-align: center; padding: 20px; background: white; border-radius: 10px; }
-.fact-number { display: block; font-size: 2rem; font-weight: 700; color: #C41E3A; }
-.fact-text { font-size: 0.9rem; color: #6B7280; }
+        .breadcrumb a {
+            color: #C41E3A;
+            text-decoration: none;
+        }
 
-/* Features */
-.features-detailed { display: grid; gap: 20px; margin-top: 20px; }
-.feature-box { background: white; padding: 25px; border-radius: 12px; }
-.feature-icon { font-size: 2rem; display: block; margin-bottom: 10px; }
-.feature-box h3 { margin-top: 0; color: #111; }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
 
-/* Service Table */
-.service-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; border-radius: 10px; overflow: hidden; }
-.service-table th, .service-table td { padding: 15px; text-align: left; border-bottom: 1px solid #E5E7EB; }
-.service-table th { background: #C41E3A; color: white; }
-.service-table tr:last-child td { border-bottom: none; }
+        /* Tipps & Mehrwert Sections */
+        .seo-tipps,
+        .mehrwert-section {
+            background: #F9FAFB;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
 
-/* Internal Links */
-.internal-links { background: #FEF2F2; padding: 25px; border-radius: 12px; margin: 30px 0; border-left: 4px solid #C41E3A; }
-.internal-links h3 { margin-top: 0; }
-.internal-links ul { list-style: none; padding: 0; margin: 0; }
-.internal-links li { padding: 8px 0; }
-.internal-links a { color: #C41E3A; text-decoration: none; }
-.internal-links a:hover { text-decoration: underline; }
+        .numbered-list {
+            padding-left: 20px;
+        }
 
-/* Responsive */
-@media (min-width: 768px) {
-    .features-detailed { grid-template-columns: repeat(3, 1fr); }
-}
+        .numbered-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
 
-    
-/* Enhanced CTAs */
-.cta-enhanced { 
-    background: linear-gradient(135deg, #C41E3A 0%, #E53E3E 100%);
-    color: white; 
-    padding: 40px; 
-    border-radius: 20px; 
-    text-align: center; 
-    margin: 40px 0;
-    box-shadow: 0 10px 40px rgba(196, 30, 58, 0.3);
-}
-.cta-enhanced h3 { color: white; margin-top: 0; font-size: 1.5rem; }
-.cta-enhanced p { margin-bottom: 25px; opacity: 0.95; }
-.cta-enhanced .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-.cta-enhanced .btn-white { background: white; color: #C41E3A; font-weight: 600; }
-.cta-enhanced .btn-outline-white { background: transparent; border: 2px solid white; color: white; }
+        .numbered-list li:last-child {
+            border-bottom: none;
+        }
 
-/* Trust Signals */
-.trust-signals { display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }
-.trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #6B7280; }
-.trust-icon { font-size: 1.2rem; }
+        .checklist-detailed {
+            list-style: none;
+            padding: 0;
+        }
 
-/* Lazy Loading Animation */
-img[loading="lazy"] { opacity: 0; transition: opacity 0.3s ease-in; }
-img[loading="lazy"].loaded { opacity: 1; }
+        .checklist-detailed li {
+            padding: 8px 0;
+        }
 
-/* Scroll Progress Indicator */
-.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, #C41E3A, #F59E0B); z-index: 9999; transition: width 0.1s; width: 0%; }
+        /* Facts Grid */
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-/* Reading Time */
-.reading-time { display: inline-flex; align-items: center; gap: 5px; font-size: 0.85rem; color: #6B7280; margin-bottom: 20px; }
+        .fact-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
 
-/* Quick Contact Badge */
-.quick-contact { position: fixed; bottom: 100px; right: 20px; z-index: 1000; display: flex; flex-direction: column; gap: 10px; }
-.quick-contact a { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; color: white; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s; }
-.quick-contact a:hover { transform: scale(1.1); }
-.quick-contact .qc-phone { background: #C41E3A; }
-.quick-contact .qc-email { background: #6B7280; }
+        .fact-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #C41E3A;
+        }
 
+        .fact-text {
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+
+        /* Features */
+        .features-detailed {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .feature-box h3 {
+            margin-top: 0;
+            color: #111;
+        }
+
+        /* Service Table */
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .service-table th,
+        .service-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .service-table th {
+            background: #C41E3A;
+            color: white;
+        }
+
+        .service-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Internal Links */
+        .internal-links {
+            background: #FEF2F2;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #C41E3A;
+        }
+
+        .internal-links h3 {
+            margin-top: 0;
+        }
+
+        .internal-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .internal-links li {
+            padding: 8px 0;
+        }
+
+        .internal-links a {
+            color: #C41E3A;
+            text-decoration: none;
+        }
+
+        .internal-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .features-detailed {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+        /* Enhanced CTAs */
+        .cta-enhanced {
+            background: linear-gradient(135deg, #C41E3A 0%, #E53E3E 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(196, 30, 58, 0.3);
+        }
+
+        .cta-enhanced h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .cta-enhanced p {
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .cta-enhanced .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-enhanced .btn-white {
+            background: white;
+            color: #C41E3A;
+            font-weight: 600;
+        }
+
+        .cta-enhanced .btn-outline-white {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* Trust Signals */
+        .trust-signals {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+
+        .trust-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Lazy Loading Animation */
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+
+        /* Scroll Progress Indicator */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #C41E3A, #F59E0B);
+            z-index: 9999;
+            transition: width 0.1s;
+            width: 0%;
+        }
+
+        /* Reading Time */
+        .reading-time {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85rem;
+            color: #6B7280;
+            margin-bottom: 20px;
+        }
+
+        /* Quick Contact Badge */
+        .quick-contact {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .quick-contact a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .quick-contact a:hover {
+            transform: scale(1.1);
+        }
+
+        .quick-contact .qc-phone {
+            background: #C41E3A;
+        }
+
+        .quick-contact .qc-email {
+            background: #6B7280;
+        }
     </style>
 
     <!-- Trust Badges -->
@@ -415,6 +625,165 @@ img[loading="lazy"].loaded { opacity: 1; }
             </div>
         </div>
     </section>
+
+    <!-- Security & Trust Section -->
+    <section class="security-trust-section">
+        <div class="container">
+            <div class="security-header">
+                <span class="security-badge">🛡️ Ihre Sicherheit ist unsere Priorität</span>
+                <h2>Vertrauen Sie auf geprüfte Qualität</h2>
+            </div>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-icon">🔒</div>
+                    <h4>SSL-verschlüsselt</h4>
+                    <p>Ihre Daten werden mit modernster 256-Bit-Verschlüsselung geschützt. Sichere Übertragung
+                        garantiert.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">✅</div>
+                    <h4>Geprüfter Fachbetrieb</h4>
+                    <p>Zertifiziert nach DIN 14676. Alle Techniker sind geschult und versichert.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">📋</div>
+                    <h4>Transparente Preise</h4>
+                    <p>Keine versteckten Kosten. Sie erhalten vorab ein verbindliches Angebot.</p>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🔄</div>
+                    <h4>Zufriedenheitsgarantie</h4>
+                    <p>Nicht zufrieden? Wir kommen kostenlos zurück und beheben das Problem.</p>
+                </div>
+            </div>
+            <div class="security-footer">
+                <div class="security-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10.000+</span>
+                        <span class="stat-label">Zufriedene Kunden</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50.000+</span>
+                        <span class="stat-label">Installierte Rauchmelder</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9/5</span>
+                        <span class="stat-label">Kundenbewertung</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Schnelle Antwort</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .security-trust-section {
+            padding: 60px 0;
+            background: linear-gradient(180deg, #F0FDF4, #FFF);
+        }
+
+        .security-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .security-badge {
+            display: inline-block;
+            background: #10B981;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .security-header h2 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .security-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #E5E7EB;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .security-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .security-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .security-card h4 {
+            margin: 0 0 10px 0;
+            color: #111;
+        }
+
+        .security-card p {
+            margin: 0;
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+
+        .security-footer {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .security-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #C41E3A;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+
+        @media (max-width: 768px) {
+            .security-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .security-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 
 
     <!-- Features Section -->
@@ -734,73 +1103,73 @@ img[loading="lazy"].loaded { opacity: 1; }
     </section>
 
     <!-- Footer -->
-    
+
     <section class="section" style="background: white; padding: 40px 20px;">
         <div class="container" style="max-width: 900px; margin: 0 auto;">
             <div class="seo-tipps">
-            <h2>🔥 Wichtige Fakten zur Rauchmelderpflicht</h2>
-            <div class="facts-grid">
-                <div class="fact-item">
-                    <span class="fact-number">95%</span>
-                    <span class="fact-text">der Brandtoten sterben an Rauchvergiftung, nicht durch Feuer</span>
-                </div>
-                <div class="fact-item">
-                    <span class="fact-number">35 Sek</span>
-                    <span class="fact-text">reichen für eine tödliche Rauchvergiftung im Schlaf</span>
-                </div>
-                <div class="fact-item">
-                    <span class="fact-number">100%</span>
-                    <span class="fact-text">der deutschen Bundesländer haben Rauchmelderpflicht</span>
-                </div>
-                <div class="fact-item">
-                    <span class="fact-number">10 Jahre</span>
-                    <span class="fact-text">beträgt die maximale Lebensdauer eines Rauchmelders</span>
+                <h2>🔥 Wichtige Fakten zur Rauchmelderpflicht</h2>
+                <div class="facts-grid">
+                    <div class="fact-item">
+                        <span class="fact-number">95%</span>
+                        <span class="fact-text">der Brandtoten sterben an Rauchvergiftung, nicht durch Feuer</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-number">35 Sek</span>
+                        <span class="fact-text">reichen für eine tödliche Rauchvergiftung im Schlaf</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-number">100%</span>
+                        <span class="fact-text">der deutschen Bundesländer haben Rauchmelderpflicht</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-number">10 Jahre</span>
+                        <span class="fact-text">beträgt die maximale Lebensdauer eines Rauchmelders</span>
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="mehrwert-section">
-            <h2>📊 Unser Service im Überblick</h2>
-            <table class="service-table">
-                <thead>
-                    <tr>
-                        <th>Leistung</th>
-                        <th>Beschreibung</th>
-                        <th>Für wen?</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Installation</strong></td>
-                        <td>Fachgerechte Montage nach DIN 14676</td>
-                        <td>Eigentümer, Vermieter, Neubauten</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Wartung</strong></td>
-                        <td>Jährliche Funktionsprüfung + Protokoll</td>
-                        <td>Alle Haushalte mit Rauchmeldern</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Austausch</strong></td>
-                        <td>Ersatz alter Geräte (>10 Jahre)</td>
-                        <td>Bei Bestandsrauchmeldern</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Beratung</strong></td>
-                        <td>Kostenlose Erstberatung vor Ort</td>
-                        <td>Bei Unsicherheit oder Fragen</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                <h2>📊 Unser Service im Überblick</h2>
+                <table class="service-table">
+                    <thead>
+                        <tr>
+                            <th>Leistung</th>
+                            <th>Beschreibung</th>
+                            <th>Für wen?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Installation</strong></td>
+                            <td>Fachgerechte Montage nach DIN 14676</td>
+                            <td>Eigentümer, Vermieter, Neubauten</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wartung</strong></td>
+                            <td>Jährliche Funktionsprüfung + Protokoll</td>
+                            <td>Alle Haushalte mit Rauchmeldern</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Austausch</strong></td>
+                            <td>Ersatz alter Geräte (>10 Jahre)</td>
+                            <td>Bei Bestandsrauchmeldern</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Beratung</strong></td>
+                            <td>Kostenlose Erstberatung vor Ort</td>
+                            <td>Bei Unsicherheit oder Fragen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="internal-links">
-    <h3>Weitere Informationen</h3>
-    <ul>
-        <li><a href="./installation.html">ℹ️ Mehr zur Rauchmelder-Installation</a></li>
-        <li><a href="./wartung.html">🔧 Jährliche Wartung - Was wird geprüft?</a></li>
-        <li><a href="./faq.html">❓ Häufig gestellte Fragen (FAQ)</a></li>
-        <li><a href="./kontakt.html">📞 Kostenlose Beratung anfordern</a></li>
-    </ul>
-</div>
+                <h3>Weitere Informationen</h3>
+                <ul>
+                    <li><a href="./installation.html">ℹ️ Mehr zur Rauchmelder-Installation</a></li>
+                    <li><a href="./wartung.html">🔧 Jährliche Wartung - Was wird geprüft?</a></li>
+                    <li><a href="./faq.html">❓ Häufig gestellte Fragen (FAQ)</a></li>
+                    <li><a href="./kontakt.html">📞 Kostenlose Beratung anfordern</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -1197,90 +1566,300 @@ img[loading="lazy"].loaded { opacity: 1; }
                 padding: 25px;
             }
         }
-    
-/* Breadcrumb Navigation */
-.breadcrumb { padding: 15px 0; font-size: 0.9rem; color: #6B7280; }
-.breadcrumb a { color: #C41E3A; text-decoration: none; }
-.breadcrumb a:hover { text-decoration: underline; }
 
-/* Tipps & Mehrwert Sections */
-.seo-tipps, .mehrwert-section { background: #F9FAFB; padding: 30px; border-radius: 15px; margin: 30px 0; }
-.numbered-list { padding-left: 20px; }
-.numbered-list li { padding: 10px 0; border-bottom: 1px solid #E5E7EB; }
-.numbered-list li:last-child { border-bottom: none; }
-.checklist-detailed { list-style: none; padding: 0; }
-.checklist-detailed li { padding: 8px 0; }
+        /* Breadcrumb Navigation */
+        .breadcrumb {
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
 
-/* Facts Grid */
-.facts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 20px; }
-.fact-item { text-align: center; padding: 20px; background: white; border-radius: 10px; }
-.fact-number { display: block; font-size: 2rem; font-weight: 700; color: #C41E3A; }
-.fact-text { font-size: 0.9rem; color: #6B7280; }
+        .breadcrumb a {
+            color: #C41E3A;
+            text-decoration: none;
+        }
 
-/* Features */
-.features-detailed { display: grid; gap: 20px; margin-top: 20px; }
-.feature-box { background: white; padding: 25px; border-radius: 12px; }
-.feature-icon { font-size: 2rem; display: block; margin-bottom: 10px; }
-.feature-box h3 { margin-top: 0; color: #111; }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
 
-/* Service Table */
-.service-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; border-radius: 10px; overflow: hidden; }
-.service-table th, .service-table td { padding: 15px; text-align: left; border-bottom: 1px solid #E5E7EB; }
-.service-table th { background: #C41E3A; color: white; }
-.service-table tr:last-child td { border-bottom: none; }
+        /* Tipps & Mehrwert Sections */
+        .seo-tipps,
+        .mehrwert-section {
+            background: #F9FAFB;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
 
-/* Internal Links */
-.internal-links { background: #FEF2F2; padding: 25px; border-radius: 12px; margin: 30px 0; border-left: 4px solid #C41E3A; }
-.internal-links h3 { margin-top: 0; }
-.internal-links ul { list-style: none; padding: 0; margin: 0; }
-.internal-links li { padding: 8px 0; }
-.internal-links a { color: #C41E3A; text-decoration: none; }
-.internal-links a:hover { text-decoration: underline; }
+        .numbered-list {
+            padding-left: 20px;
+        }
 
-/* Responsive */
-@media (min-width: 768px) {
-    .features-detailed { grid-template-columns: repeat(3, 1fr); }
-}
+        .numbered-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
 
-    
-/* Enhanced CTAs */
-.cta-enhanced { 
-    background: linear-gradient(135deg, #C41E3A 0%, #E53E3E 100%);
-    color: white; 
-    padding: 40px; 
-    border-radius: 20px; 
-    text-align: center; 
-    margin: 40px 0;
-    box-shadow: 0 10px 40px rgba(196, 30, 58, 0.3);
-}
-.cta-enhanced h3 { color: white; margin-top: 0; font-size: 1.5rem; }
-.cta-enhanced p { margin-bottom: 25px; opacity: 0.95; }
-.cta-enhanced .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-.cta-enhanced .btn-white { background: white; color: #C41E3A; font-weight: 600; }
-.cta-enhanced .btn-outline-white { background: transparent; border: 2px solid white; color: white; }
+        .numbered-list li:last-child {
+            border-bottom: none;
+        }
 
-/* Trust Signals */
-.trust-signals { display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }
-.trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #6B7280; }
-.trust-icon { font-size: 1.2rem; }
+        .checklist-detailed {
+            list-style: none;
+            padding: 0;
+        }
 
-/* Lazy Loading Animation */
-img[loading="lazy"] { opacity: 0; transition: opacity 0.3s ease-in; }
-img[loading="lazy"].loaded { opacity: 1; }
+        .checklist-detailed li {
+            padding: 8px 0;
+        }
 
-/* Scroll Progress Indicator */
-.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, #C41E3A, #F59E0B); z-index: 9999; transition: width 0.1s; width: 0%; }
+        /* Facts Grid */
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-/* Reading Time */
-.reading-time { display: inline-flex; align-items: center; gap: 5px; font-size: 0.85rem; color: #6B7280; margin-bottom: 20px; }
+        .fact-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
 
-/* Quick Contact Badge */
-.quick-contact { position: fixed; bottom: 100px; right: 20px; z-index: 1000; display: flex; flex-direction: column; gap: 10px; }
-.quick-contact a { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; color: white; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s; }
-.quick-contact a:hover { transform: scale(1.1); }
-.quick-contact .qc-phone { background: #C41E3A; }
-.quick-contact .qc-email { background: #6B7280; }
+        .fact-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #C41E3A;
+        }
 
+        .fact-text {
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+
+        /* Features */
+        .features-detailed {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .feature-box h3 {
+            margin-top: 0;
+            color: #111;
+        }
+
+        /* Service Table */
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .service-table th,
+        .service-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .service-table th {
+            background: #C41E3A;
+            color: white;
+        }
+
+        .service-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Internal Links */
+        .internal-links {
+            background: #FEF2F2;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #C41E3A;
+        }
+
+        .internal-links h3 {
+            margin-top: 0;
+        }
+
+        .internal-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .internal-links li {
+            padding: 8px 0;
+        }
+
+        .internal-links a {
+            color: #C41E3A;
+            text-decoration: none;
+        }
+
+        .internal-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .features-detailed {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+        /* Enhanced CTAs */
+        .cta-enhanced {
+            background: linear-gradient(135deg, #C41E3A 0%, #E53E3E 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(196, 30, 58, 0.3);
+        }
+
+        .cta-enhanced h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .cta-enhanced p {
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .cta-enhanced .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-enhanced .btn-white {
+            background: white;
+            color: #C41E3A;
+            font-weight: 600;
+        }
+
+        .cta-enhanced .btn-outline-white {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* Trust Signals */
+        .trust-signals {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+
+        .trust-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Lazy Loading Animation */
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+
+        /* Scroll Progress Indicator */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #C41E3A, #F59E0B);
+            z-index: 9999;
+            transition: width 0.1s;
+            width: 0%;
+        }
+
+        /* Reading Time */
+        .reading-time {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85rem;
+            color: #6B7280;
+            margin-bottom: 20px;
+        }
+
+        /* Quick Contact Badge */
+        .quick-contact {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .quick-contact a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .quick-contact a:hover {
+            transform: scale(1.1);
+        }
+
+        .quick-contact .qc-phone {
+            background: #C41E3A;
+        }
+
+        .quick-contact .qc-email {
+            background: #6B7280;
+        }
     </style>
 
     <script>
