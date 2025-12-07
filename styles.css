@@ -1444,11 +1444,13 @@ p {
     font-weight: 700;
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
+    color: white !important;
 }
 
 .stat-label {
     font-size: 1rem;
-    opacity: 0.85;
+    opacity: 0.95;
+    color: white !important;
 }
 
 /* ============================================
