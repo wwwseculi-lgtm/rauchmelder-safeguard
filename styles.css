@@ -1618,20 +1618,20 @@ p {
 .mobile-nav {
     position: fixed;
     top: 72px;
-    left: 0;
+    left: -100%;
     right: 0;
     background: var(--white);
     border-bottom: 1px solid var(--gray-100);
     padding: 1rem;
-    transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition-base);
     z-index: 999;
+    width: 100%;
 }
 
 .mobile-nav.active {
-    transform: translateY(0);
+    left: 0;
     opacity: 1;
     visibility: visible;
 }
