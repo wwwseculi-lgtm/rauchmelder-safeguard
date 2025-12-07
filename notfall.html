@@ -3,11 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Was tun wenn der Rauchmelder Alarm gibt? Lebensrettende Verhaltensregeln im Brandfall.">
-    <title>Notfall & Verhalten im Brandfall | Lebensrettende Tipps | Secu.li</title>
-    <link rel="canonical" href="https://secu.li/notfall.html">
+    <meta name="description" content="Was tun wenn der Rauchmelder Alarm gibt? Lebensrettende Verhaltensregeln.">
+    <title>Notfall & Verhalten im Brandfall | Secu.li</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#C41E3A">
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 140px 20px 80px;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .page-hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .content-section.wide {
+            max-width: 1100px;
+        }
+        .content-section h2 {
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+        .content-section h2:first-child {
+            margin-top: 0;
+        }
+        .info-box {
+            background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #10B981;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #047857;
+        }
+        .warning-box {
+            background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #F59E0B;
+        }
+        .danger-box {
+            background: linear-gradient(135deg, #FEF2F2, #FEE2E2);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #DC2626;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #C41E3A, #991B1B);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+        }
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        .cta-box p {
+            opacity: 0.95;
+        }
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card-pro {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .feature-card-pro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .feature-card-pro .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .feature-card-pro h4 {
+            margin: 0 0 10px;
+            color: #1a1a1a;
+        }
+        .feature-card-pro p {
+            margin: 0;
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+        .check-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .check-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10B981;
+            font-weight: bold;
+        }
+        .cross-list li:before {
+            content: "✗";
+            color: #DC2626;
+        }
+        .breadcrumb {
+            display: flex;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .pricing-card {
+            background: white;
+            border: 2px solid #E5E7EB;
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            position: relative;
+        }
+        .pricing-card.featured {
+            border-color: var(--primary);
+            transform: scale(1.02);
+        }
+        .pricing-card .badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #F59E0B;
+            color: #111;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .pricing-card h3 {
+            margin-top: 10px;
+        }
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 15px 0;
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .pricing-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .review-card {
+            background: white;
+            border: 1px solid #E5E7EB;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .review-stars {
+            color: #F59E0B;
+        }
+        .blog-card {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            transition: all 0.3s;
+        }
+        .blog-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .blog-card-content {
+            padding: 25px;
+        }
+        .blog-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .blog-tag.tip { background: #10B981; color: white; }
+        .blog-tag.news { background: #3B82F6; color: white; }
+        .blog-tag.info { background: #F59E0B; color: #111; }
+        .blog-tag.important { background: #DC2626; color: white; }
+        .download-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #F9FAFB;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .download-item:hover {
+            background: #F3F4F6;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+        .pro-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+        .pro-table th, .pro-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .pro-table th {
+            background: #1a1a1a;
+            color: white;
+        }
+        .pro-table tr:hover {
+            background: #F9FAFB;
+        }
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+            .page-hero {
+                padding: 120px 20px 60px;
+            }
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -25,70 +312,74 @@
         </div>
     </header>
     
+    <section class="page-hero">
+        <nav class="breadcrumb">
+            <a href="index.html">Startseite</a> › <span>Verhalten im Brandfall</span>
+        </nav>
+        <span class="hero-badge">🚨 Wichtig</span>
+        <h1>Verhalten im Brandfall</h1>
+        <p class="subtitle">Was tun wenn der Rauchmelder Alarm gibt? Lebensrettende Verhaltensregeln.</p>
+    </section>
     
-        <section class="section" style="padding-top: 120px;">
-            <div class="container" style="max-width: 900px;">
-                <h1>Notfall & Verhalten im Brandfall</h1>
-                <p class="subtitle">Diese Tipps können Leben retten - lesen und teilen Sie sie mit Ihrer Familie.</p>
-                
-                <div style="background: #DC2626; color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px;">
-                    <h2 style="color: white;">🚨 Notruf: 112</h2>
-                    <p>Feuerwehr und Rettungsdienst europaweit - kostenlos, 24/7</p>
-                </div>
-                
-                <h2>Wenn der Rauchmelder Alarm gibt</h2>
-                <ol>
-                    <li><strong>Ruhe bewahren</strong> - Panik führt zu Fehlern</li>
-                    <li><strong>Tür prüfen</strong> - Ist sie heiß? Nicht öffnen!</li>
-                    <li><strong>Gebückt gehen</strong> - Rauch steigt nach oben</li>
-                    <li><strong>Fluchtweg nutzen</strong> - Niemals den Aufzug!</li>
-                    <li><strong>Notruf wählen</strong> - 112 anrufen</li>
-                </ol>
-                
-                <h2>Wichtige Verhaltensregeln</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🚪</div>
-                        <h4>Türen schließen</h4>
-                        <p>Geschlossene Türen halten Feuer und Rauch auf.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🪟</div>
-                        <h4>Fenster nicht öffnen</h4>
-                        <p>Sauerstoff facht das Feuer an.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🧒</div>
-                        <h4>Kinder zuerst</h4>
-                        <p>Helfen Sie zuerst Kindern und hilfsbedürftigen Personen.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🏃</div>
-                        <h4>Nicht zurückgehen</h4>
-                        <p>Niemals zurück ins Gebäude für Wertsachen.</p>
-                    </div>
-                </div>
-                
-                <h2>Wenn Sie nicht flüchten können</h2>
-                <ul>
-                    <li>Fenster öffnen und um Hilfe rufen</li>
-                    <li>Tür mit nassen Tüchern abdichten</li>
-                    <li>Am Boden bleiben (weniger Rauch)</li>
-                    <li>Auf Rettung warten</li>
-                </ul>
-                
-                <div style="background: #FEF2F2; padding: 30px; border-radius: 15px; margin-top: 40px;">
-                    <h3>💡 Vorsorge ist besser</h3>
-                    <p>Funktionierende Rauchmelder geben Ihnen wertvolle Zeit zur Flucht. Lassen Sie Ihre Melder regelmäßig warten.</p>
-                    <a href="wartung.html" class="btn btn-primary">Mehr zur Wartung</a>
-                </div>
+    <div class="content-section">
+        
+        <div class="danger-box" style="text-align: center;">
+            <h2 style="color: #DC2626; margin-top: 0;">🚨 Notruf: 112</h2>
+            <p style="margin: 0;">Feuerwehr und Rettungsdienst europaweit - kostenlos, 24/7</p>
+        </div>
+        
+        <h2>Wenn der Rauchmelder Alarm gibt</h2>
+        <div class="feature-cards">
+            <div class="feature-card-pro">
+                <div class="icon">😌</div>
+                <h4>1. Ruhe bewahren</h4>
+                <p>Panik führt zu Fehlern</p>
             </div>
-        </section>
+            <div class="feature-card-pro">
+                <div class="icon">🚪</div>
+                <h4>2. Tür prüfen</h4>
+                <p>Ist sie heiß? Nicht öffnen!</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🏃</div>
+                <h4>3. Gebückt gehen</h4>
+                <p>Rauch steigt nach oben</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">📞</div>
+                <h4>4. Notruf wählen</h4>
+                <p>112 anrufen</p>
+            </div>
+        </div>
+        
+        <h2>Wichtige Verhaltensregeln</h2>
+        <ul class="check-list">
+            <li><strong>Türen schließen</strong> - halten Feuer und Rauch auf</li>
+            <li><strong>Fenster nicht öffnen</strong> - Sauerstoff facht Feuer an</li>
+            <li><strong>Kinder zuerst</strong> - helfen Sie zuerst Hilfsbedürftigen</li>
+            <li><strong>Nicht zurückgehen</strong> - niemals für Wertsachen</li>
+        </ul>
+        
+        <div class="warning-box">
+            <h3>⚠️ Wenn Sie nicht flüchten können</h3>
+            <ul>
+                <li>Fenster öffnen und um Hilfe rufen</li>
+                <li>Tür mit nassen Tüchern abdichten</li>
+                <li>Am Boden bleiben (weniger Rauch)</li>
+                <li>Auf Rettung warten</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>💡 Vorsorge ist besser</h3>
+            <p>Funktionierende Rauchmelder geben Ihnen wertvolle Zeit zur Flucht. <a href="wartung.html">Mehr zur Wartung →</a></p>
+        </div>
 
+    </div>
     
     <footer class="footer">
         <div class="container" style="text-align: center; padding: 30px;">
-            <p>&copy; 2024 Secu.li - Notfall & Verhalten im Brandfall</p>
+            <p>&copy; 2024 Secu.li - Verhalten im Brandfall</p>
             <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
         </div>
     </footer>
