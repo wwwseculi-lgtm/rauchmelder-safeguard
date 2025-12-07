@@ -13,10 +13,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://secu.li/bewertungen.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://secu.li/bg/index.html</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/blog.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://secu.li/danke.html</loc>
@@ -26,6 +38,12 @@
   </url>
   <url>
     <loc>https://secu.li/datenschutz.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/downloads.html</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -73,10 +91,52 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://secu.li/montage-anleitung.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/notfall.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/preise.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/privatkunden.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://secu.li/produkte.html</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/ratgeber.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/rauchmelder-vergleich.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/rauchmelderpflicht.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://secu.li/service.html</loc>
@@ -362,6 +422,12 @@
   </url>
   <url>
     <loc>https://secu.li/standorte/bulgarien/varna.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/standorte/bulgarien.html</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -16267,7 +16333,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://secu.li/vermieter.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://secu.li/wartung.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://secu.li/zertifikate.html</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
