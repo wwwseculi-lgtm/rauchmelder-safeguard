@@ -1,0 +1,254 @@
+#!/usr/bin/env python3
+"""
+Erweiterte SEO-Features für alle Seiten
+- Social Sharing Buttons
+- Lazy Loading für Bilder
+- Verbesserte CTAs
+- Alt-Texte für Bilder
+- Erweiterte strukturierte Daten
+- Performance-Optimierungen
+"""
+
+import os
+import re
+from pathlib import Path
+
+BASE_DIR = Path("/Users/neslihanakdeniz/Desktop/Rauchmelder")
+
+# Social Sharing Buttons
+SOCIAL_SHARING = '''
+<div class="social-share">
+    <span class="share-label">Teilen:</span>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank" rel="noopener" class="share-btn share-facebook" aria-label="Auf Facebook teilen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+    </a>
+    <a href="https://twitter.com/intent/tweet?url={url}&text={title}" target="_blank" rel="noopener" class="share-btn share-twitter" aria-label="Auf Twitter teilen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+    </a>
+    <a href="https://wa.me/?text={title}%20{url}" target="_blank" rel="noopener" class="share-btn share-whatsapp" aria-label="Per WhatsApp teilen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="mailto:?subject={title}&body={url}" class="share-btn share-email" aria-label="Per E-Mail teilen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </a>
+</div>
+'''
+
+# CSS für Social Sharing und Performance
+ADVANCED_CSS = '''
+/* Social Sharing */
+.social-share { display: flex; align-items: center; gap: 10px; margin: 25px 0; padding: 15px; background: #F9FAFB; border-radius: 10px; }
+.share-label { font-size: 0.9rem; color: #6B7280; font-weight: 500; }
+.share-btn { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; transition: transform 0.2s, background 0.2s; text-decoration: none; }
+.share-btn:hover { transform: scale(1.1); }
+.share-facebook { background: #1877F2; color: white; }
+.share-twitter { background: #1DA1F2; color: white; }
+.share-whatsapp { background: #25D366; color: white; }
+.share-email { background: #6B7280; color: white; }
+
+/* Enhanced CTAs */
+.cta-enhanced { 
+    background: linear-gradient(135deg, #C41E3A 0%, #E53E3E 100%);
+    color: white; 
+    padding: 40px; 
+    border-radius: 20px; 
+    text-align: center; 
+    margin: 40px 0;
+    box-shadow: 0 10px 40px rgba(196, 30, 58, 0.3);
+}
+.cta-enhanced h3 { color: white; margin-top: 0; font-size: 1.5rem; }
+.cta-enhanced p { margin-bottom: 25px; opacity: 0.95; }
+.cta-enhanced .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+.cta-enhanced .btn-white { background: white; color: #C41E3A; font-weight: 600; }
+.cta-enhanced .btn-outline-white { background: transparent; border: 2px solid white; color: white; }
+
+/* Trust Signals */
+.trust-signals { display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }
+.trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #6B7280; }
+.trust-icon { font-size: 1.2rem; }
+
+/* Lazy Loading Animation */
+img[loading="lazy"] { opacity: 0; transition: opacity 0.3s ease-in; }
+img[loading="lazy"].loaded { opacity: 1; }
+
+/* Scroll Progress Indicator */
+.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, #C41E3A, #F59E0B); z-index: 9999; transition: width 0.1s; width: 0%; }
+
+/* Reading Time */
+.reading-time { display: inline-flex; align-items: center; gap: 5px; font-size: 0.85rem; color: #6B7280; margin-bottom: 20px; }
+
+/* Quick Contact Badge */
+.quick-contact { position: fixed; bottom: 100px; right: 20px; z-index: 1000; display: flex; flex-direction: column; gap: 10px; }
+.quick-contact a { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; color: white; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s; }
+.quick-contact a:hover { transform: scale(1.1); }
+.quick-contact .qc-phone { background: #C41E3A; }
+.quick-contact .qc-email { background: #6B7280; }
+'''
+
+# Enhanced CTA Section
+ENHANCED_CTA = '''
+<div class="cta-enhanced">
+    <h3>🚀 Jetzt kostenloses Angebot anfordern!</h3>
+    <p>Professionelle Rauchmelder-Installation und Wartung - Fair, schnell und zertifiziert nach DIN 14676</p>
+    <div class="btn-group">
+        <a href="{base}kontakt.html" class="btn btn-white btn-lg">✉️ Kontaktformular</a>
+        <a href="tel:+4915778631120" class="btn btn-outline-white btn-lg">📞 +49 157 78631120</a>
+    </div>
+    <div class="trust-signals" style="margin-top: 25px;">
+        <div class="trust-item"><span class="trust-icon">✓</span> Kostenlose Erstberatung</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> Faire Festpreise</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> Antwort in 24h</div>
+    </div>
+</div>
+'''
+
+# Quick Contact Badge
+QUICK_CONTACT = '''
+<div class="quick-contact">
+    <a href="tel:+4915778631120" class="qc-phone" aria-label="Anrufen">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    </a>
+    <a href="mailto:info@secu.li" class="qc-email" aria-label="E-Mail senden">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </a>
+</div>
+'''
+
+# JavaScript für Lazy Loading und Scroll Progress
+ADVANCED_JS = '''
+<script>
+// Lazy Loading für Bilder
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    images.forEach(img => {
+        if (img.complete) {
+            img.classList.add('loaded');
+        } else {
+            img.addEventListener('load', () => img.classList.add('loaded'));
+        }
+    });
+});
+
+// Scroll Progress Indicator
+if (!document.querySelector('.scroll-progress')) {
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    document.body.prepend(progressBar);
+    
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = progress + '%';
+    });
+}
+
+// Smooth Scroll für Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+</script>
+'''
+
+def get_base_path(filepath):
+    rel = filepath.relative_to(BASE_DIR)
+    depth = len(rel.parts) - 1
+    return "../" * depth if depth > 0 else "./"
+
+def get_page_url(filepath):
+    rel = filepath.relative_to(BASE_DIR)
+    return "https://secu.li/" + str(rel).replace("\\", "/")
+
+def get_page_title(content):
+    match = re.search(r'<title>([^<]+)</title>', content)
+    return match.group(1) if match else "Secu.li"
+
+def enhance_page_advanced(filepath):
+    """Fügt erweiterte SEO-Features hinzu"""
+    
+    content = filepath.read_text(encoding='utf-8')
+    
+    # Prüfen ob bereits erweitert
+    if 'social-share' in content or 'cta-enhanced' in content:
+        return False
+    
+    base_path = get_base_path(filepath)
+    page_url = get_page_url(filepath)
+    page_title = get_page_title(content)
+    
+    # 1. CSS hinzufügen
+    if '</style>' in content and 'social-share' not in content:
+        content = content.replace('</style>', f'{ADVANCED_CSS}\n    </style>')
+    
+    # 2. Social Sharing hinzufügen (nach dem ersten h1 oder am Anfang des Contents)
+    social = SOCIAL_SHARING.format(
+        url=page_url.replace('%', '%25'),
+        title=page_title.replace(' ', '%20')
+    )
+    
+    # Nach der ersten H1 einfügen
+    if '<h1' in content:
+        content = re.sub(
+            r'(</h1>)',
+            f'\\1\n{social}',
+            content, count=1
+        )
+    
+    # 3. Enhanced CTA vor Footer
+    enhanced_cta = ENHANCED_CTA.format(base=base_path)
+    if '<footer' in content and 'cta-enhanced' not in content:
+        content = content.replace('<footer', f'{enhanced_cta}\n    <footer')
+    
+    # 4. Quick Contact Badge
+    if '</body>' in content and 'quick-contact' not in content:
+        content = content.replace('</body>', f'{QUICK_CONTACT}\n</body>')
+    
+    # 5. JavaScript für erweiterte Features
+    if '</body>' in content and 'scroll-progress' not in content:
+        content = content.replace('</body>', f'{ADVANCED_JS}\n</body>')
+    
+    # 6. Lazy Loading für Bilder hinzufügen
+    content = re.sub(
+        r'<img(?![^>]*loading=)',
+        '<img loading="lazy"',
+        content
+    )
+    
+    # 7. Alt-Texte für Bilder ohne Alt
+    content = re.sub(
+        r'<img([^>]*)alt=""([^>]*)>',
+        r'<img\1alt="Rauchmelder Service"\2>',
+        content
+    )
+    content = re.sub(
+        r'<img(?![^>]*alt=)([^>]*)>',
+        r'<img alt="Rauchmelder Brandschutz"\1>',
+        content
+    )
+    
+    filepath.write_text(content, encoding='utf-8')
+    return True
+
+def main():
+    enhanced = 0
+    
+    for html_file in BASE_DIR.rglob("*.html"):
+        if any(skip in str(html_file) for skip in ['node_modules', '.git']):
+            continue
+        
+        if enhance_page_advanced(html_file):
+            enhanced += 1
+            if enhanced % 100 == 0:
+                print(f"✅ {enhanced} Seiten erweitert...")
+    
+    print(f"\n✅ {enhanced} Seiten mit erweiterten SEO-Features aktualisiert!")
+    print("📊 Hinzugefügt: Social Sharing, Enhanced CTAs, Quick Contact, Lazy Loading, Scroll Progress")
+
+if __name__ == "__main__":
+    main()
