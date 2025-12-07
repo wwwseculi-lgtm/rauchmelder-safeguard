@@ -539,18 +539,6 @@
             opacity: 1;
         }
 
-        /* Scroll Progress Indicator */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #C41E3A, #F59E0B);
-            z-index: 9999;
-            transition: width 0.1s;
-            width: 0%;
-        }
-
         /* Reading Time */
         .reading-time {
             display: inline-flex;
@@ -1095,14 +1083,16 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section bg-gradient" style="color: var(--white);">
+    <section class="section bg-gradient"
+        style="color: var(--white); max-width: 1100px; margin: 40px auto; border-radius: 25px; box-shadow: 0 10px 40px rgba(196, 30, 58, 0.3);">
         <div class="container">
             <div class="section-header" style="color: var(--white);">
                 <h2 style="color: var(--white);">Jetzt Beratung anfordern</h2>
                 <p style="color: rgba(255,255,255,0.9);">Kontaktieren Sie uns für eine kostenlose Beratung.</p>
                 <div class="hero-buttons justify-center mt-8">
                     <a href="produkte.html" class="btn btn-secondary btn-lg">Produkte ansehen</a>
-                    <a href="kontakt.html" class="btn btn-outline btn-lg">Kontakt</a>
+                    <a href="kontakt.html" class="btn btn-lg"
+                        style="background: transparent; border: 2px solid white; color: white;">Kontakt</a>
                 </div>
             </div>
         </div>
@@ -1807,18 +1797,6 @@
 
         img[loading="lazy"].loaded {
             opacity: 1;
-        }
-
-        /* Scroll Progress Indicator */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #C41E3A, #F59E0B);
-            z-index: 9999;
-            transition: width 0.1s;
-            width: 0%;
         }
 
         /* Reading Time */
