@@ -1525,7 +1525,7 @@ p {
    FOOTER - Clean, Modern
    ============================================ */
 .footer {
-    background: var(--gray-900);
+    background: #1a1a1a;
     color: var(--gray-400);
     padding: 5rem 0 2rem;
 }
