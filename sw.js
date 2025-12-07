@@ -1,5 +1,5 @@
 // Secu.li Service Worker - PWA Offline Support
-const CACHE_NAME = 'seculi-v1';
+const CACHE_NAME = 'seculi-v2';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -7,11 +7,17 @@ const STATIC_ASSETS = [
     '/produkte.html',
     '/service.html',
     '/ueber-uns.html',
+    '/preise.html',
+    '/ratgeber.html',
+    '/notfall.html',
+    '/faq.html',
     '/impressum.html',
     '/datenschutz.html',
     '/styles.css',
     '/script.js',
-    '/manifest.json'
+    '/manifest.json',
+    '/icons/icon-192x192.png',
+    '/icons/icon-512x512.png'
 ];
 
 // Install Event - Cache Static Assets
