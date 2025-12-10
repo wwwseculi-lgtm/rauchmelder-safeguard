@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rauchmelder-Service für Facility Manager: Komplette Übernahme der Brandschutzpflichten, digitales Reporting, schnelle Reaktionszeiten. Outsourcing leicht gemacht.">
+    <meta name="keywords"
+        content="Rauchmelder Facility Management, Brandschutz Outsourcing, FM Dienstleister Rauchmelder, Gebäudemanagement Brandschutz">
+    <title>Rauchmelder für Facility Management | Outsourcing | Secu.li</title>
+    <link rel="canonical" href="https://secu.li/facility-management.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#C41E3A">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Rauchmelder-Service für Facility Management",
+        "provider": {"@type": "LocalBusiness", "name": "Secu.li"},
+        "serviceType": "Brandschutz-Outsourcing für Facility Manager",
+        "areaServed": "Deutschland"
+    }
+    </script>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #1E3A5F 0%, #2D5A87 100%);
+            color: white;
+            padding: 160px 20px 80px;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #3B82F6;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+        }
+
+        .content-section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+
+        .benefit-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .benefit-card {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #3B82F6, #60A5FA);
+        }
+
+        .benefit-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card h4 {
+            margin: 0 0 10px;
+            color: #1a1a1a;
+        }
+
+        .benefit-card p {
+            margin: 0;
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 18px 20px;
+            text-align: left;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .comparison-table th {
+            background: #F9FAFB;
+            font-weight: 600;
+        }
+
+        .comparison-table .highlight {
+            background: #F0FDF4;
+        }
+
+        .comparison-table .check {
+            color: #10B981;
+            font-weight: bold;
+        }
+
+        .comparison-table .cross {
+            color: #DC2626;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #3B82F6;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: #1E40AF;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #C41E3A, #991B1B);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .cta-box p {
+            opacity: 0.95;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+
+        .cta-box .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .process-timeline {
+            position: relative;
+            padding-left: 40px;
+            margin: 40px 0;
+        }
+
+        .process-timeline::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #E5E7EB;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 30px;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -32px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #3B82F6;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item h4 {
+            margin: 0 0 8px;
+            color: #1a1a1a;
+        }
+
+        .timeline-item p {
+            margin: 0;
+            color: #6B7280;
+        }
+
+        .api-box {
+            background: #1F2937;
+            color: white;
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .api-box h3 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .api-box code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .page-hero {
+                padding: 120px 20px 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Secu.li</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <a href="#kontakt" class="btn btn-primary btn-sm">Anfrage</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <nav class="breadcrumb">
+            <a href="index.html">Startseite</a> › <a href="b2b.html">B2B</a> › <span>Facility Management</span>
+        </nav>
+        <span class="hero-badge">🔧 Für FM</span>
+        <h1>Rauchmelder-Service für Facility Management</h1>
+        <p class="subtitle">Outsourcen Sie Ihre Brandschutzpflichten an Spezialisten. Wir übernehmen Installation,
+            Wartung und Dokumentation – Sie behalten die volle Kontrolle.</p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <a href="#kontakt" class="btn btn-primary btn-lg">Partnerschaft anfragen</a>
+            <a href="tel:+4915778631120" class="btn btn-outline btn-lg" style="border-color: white; color: white;">📞
+                Direktkontakt</a>
+        </div>
+    </section>
+
+    <div class="content-section">
+        <h2>Warum Facility Manager uns vertrauen</h2>
+        <p>Als Facility Manager jonglieren Sie täglich mit dutzenden Gewerken und Dienstleistern. Der Brandschutz ist
+            ein kritischer Bereich, der keine Fehler verzeiht. Wir machen es Ihnen einfach:</p>
+
+        <div class="benefit-cards">
+            <div class="benefit-card">
+                <div class="icon">✅</div>
+                <h4>Komplette Entlastung</h4>
+                <p>Wir übernehmen die gesamte Abwicklung – von der Terminierung bis zur Dokumentation. Sie haben einen
+                    Ansprechpartner für alles.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">📊</div>
+                <h4>Digitales Reporting</h4>
+                <p>Live-Dashboard mit Übersicht aller Objekte, Wartungsstatus und anstehenden Terminen. Export für Ihre
+                    CAFM-Software.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">⚡</div>
+                <h4>Schnelle Reaktion</h4>
+                <p>SLA-garantierte Reaktionszeiten. Bei kritischen Störungen sind wir in wenigen Stunden vor Ort.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">🔗</div>
+                <h4>System-Integration</h4>
+                <p>Optional: API-Anbindung an Ihre FM-Software für automatischen Datenaustausch.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">📋</div>
+                <h4>Audit-sichere Doku</h4>
+                <p>Lückenlose Protokollierung für interne Audits, Behörden und Versicherungen.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">💰</div>
+                <h4>Planbare Kosten</h4>
+                <p>Festpreise pro Objekt oder Melder. Keine versteckten Kosten, keine Überraschungen.</p>
+            </div>
+        </div>
+
+        <h2>Selbst machen vs. Outsourcing</h2>
+
+        <div style="overflow-x: auto;">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Aspekt</th>
+                        <th>Selbst organisieren</th>
+                        <th class="highlight">Mit Secu.li</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Terminkoordination</td>
+                        <td>Eigener Aufwand</td>
+                        <td class="highlight"><span class="check">✓</span> Übernehmen wir</td>
+                    </tr>
+                    <tr>
+                        <td>Fachkompetenz</td>
+                        <td>Schulungen nötig</td>
+                        <td class="highlight"><span class="check">✓</span> Zertifizierte Techniker</td>
+                    </tr>
+                    <tr>
+                        <td>Dokumentation</td>
+                        <td>Manuell pflegen</td>
+                        <td class="highlight"><span class="check">✓</span> Automatisch digital</td>
+                    </tr>
+                    <tr>
+                        <td>Haftungsrisiko</td>
+                        <td>Bei Ihnen</td>
+                        <td class="highlight"><span class="check">✓</span> Wir sind versichert</td>
+                    </tr>
+                    <tr>
+                        <td>Reaktionszeit</td>
+                        <td>Abhängig von Kapazität</td>
+                        <td class="highlight"><span class="check">✓</span> SLA-garantiert</td>
+                    </tr>
+                    <tr>
+                        <td>Skalierbarkeit</td>
+                        <td>Personal einstellen</td>
+                        <td class="highlight"><span class="check">✓</span> Sofort skalierbar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>So funktioniert die Zusammenarbeit</h2>
+
+        <div class="process-timeline">
+            <div class="timeline-item">
+                <h4>1. Onboarding</h4>
+                <p>Sie übermitteln uns Ihre Objektdaten. Wir importieren alles in unser System und erstellen einen
+                    Überblick.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2. Bestandsaufnahme</h4>
+                <p>Bei Bedarf erfassen wir den Ist-Zustand vor Ort und dokumentieren alle vorhandenen Rauchmelder.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>3. Planung</h4>
+                <p>Wir erstellen einen Wartungsplan für alle Objekte und stimmen Termine mit Ihnen ab.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>4. Durchführung</h4>
+                <p>Unsere Techniker führen Installation und Wartung durch – Sie werden nur über Ergebnisse informiert.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <h4>5. Reporting</h4>
+                <p>Sie erhalten regelmäßige Berichte und haben jederzeit Zugriff auf das Online-Dashboard.</p>
+            </div>
+        </div>
+
+        <div class="api-box">
+            <h3>🔌 API-Integration für CAFM-Systeme</h3>
+            <p>Für größere FM-Dienstleister bieten wir optional eine API-Schnittstelle an. Damit können Wartungsdaten
+                automatisch in Ihr CAFM-System übertragen werden.</p>
+            <p style="opacity: 0.8; font-size: 0.9rem;">Unterstützte Formate: <code>REST API</code>,
+                <code>CSV Export</code>, <code>XML</code></p>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 Partnermodell für FM-Dienstleister</h3>
+            <p>Sie betreuen als FM-Dienstleister mehrere Kunden? Wir bieten attraktive Partnerkonditionen mit
+                White-Label-Option. Ihre Kunden sehen Ihre Marke, wir liefern den Service im Hintergrund.</p>
+        </div>
+
+        <div class="cta-box" id="kontakt">
+            <h3>Partnerschaft starten</h3>
+            <p>Lassen Sie uns besprechen, wie wir Ihre Brandschutzprozesse optimieren können.</p>
+            <div class="btn-group">
+                <a href="kontakt.html?service=facility" class="btn" style="background: white; color: var(--primary);">✉️
+                    Beratungsgespräch</a>
+                <a href="tel:+4915778631120" class="btn"
+                    style="border: 2px solid white; color: white; background: transparent;">📞 +49 157 78631120</a>
+            </div>
+        </div>
+
+        <div style="background: #F9FAFB; padding: 25px 30px; border-radius: 15px; margin-top: 40px;">
+            <h3 style="margin-top: 0;">Weitere B2B-Lösungen</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 10px;">
+                <li><a href="gewerbeimmobilien.html" style="color: var(--primary);">→ Für Gewerbeimmobilien</a></li>
+                <li><a href="hausverwaltung.html" style="color: var(--primary);">→ Für Hausverwaltungen</a></li>
+                <li><a href="hotel-gastgewerbe.html" style="color: var(--primary);">→ Für Hotels & Gastgewerbe</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center; padding: 30px;">
+            <p>&copy; 2024 Secu.li - Rauchmelder für Facility Management</p>
+            <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rauchmelder für Hotels, Pensionen und Gastgewerbe. Diskrete Installation, schnelle Wartung außerhalb Stoßzeiten, versicherungskonforme Dokumentation.">
+    <meta name="keywords"
+        content="Rauchmelder Hotel, Brandschutz Gastgewerbe, Rauchmelder Pension, Brandschutz Restaurant, Hotel Brandschutzvorschriften">
+    <title>Rauchmelder für Hotels & Gastgewerbe | Brandschutz | Secu.li</title>
+    <link rel="canonical" href="https://secu.li/hotel-gastgewerbe.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#C41E3A">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Rauchmelder-Service für Hotels und Gastgewerbe",
+        "provider": {"@type": "LocalBusiness", "name": "Secu.li"},
+        "serviceType": "Brandschutz für Beherbergungsbetriebe",
+        "areaServed": "Deutschland"
+    }
+    </script>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #4A1D1D 0%, #7C2D2D 100%);
+            color: white;
+            padding: 160px 20px 80px;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #F59E0B;
+            color: #111;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+        }
+
+        .content-section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+
+        .segment-tabs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .segment-tab {
+            background: white;
+            border: 2px solid #E5E7EB;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .segment-tab:hover,
+        .segment-tab.active {
+            border-color: var(--primary);
+            background: #FEF2F2;
+        }
+
+        .segment-tab .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .segment-tab h4 {
+            margin: 0;
+            color: #1a1a1a;
+        }
+
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .feature-card-pro {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s;
+        }
+
+        .feature-card-pro:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card-pro .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card-pro h4 {
+            margin: 0 0 10px;
+            color: #1a1a1a;
+        }
+
+        .feature-card-pro p {
+            margin: 0;
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #FEF2F2, #FEE2E2);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #DC2626;
+        }
+
+        .warning-box h3 {
+            margin-top: 0;
+            color: #991B1B;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #10B981;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: #047857;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #C41E3A, #991B1B);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .cta-box p {
+            opacity: 0.95;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+
+        .cta-box .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .check-list li {
+            padding: 15px 0;
+            padding-left: 35px;
+            position: relative;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .check-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10B981;
+            font-weight: bold;
+        }
+
+        .testimonial-box {
+            background: #F9FAFB;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #F59E0B;
+        }
+
+        .testimonial-box .quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #374151;
+        }
+
+        .testimonial-box .author {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .testimonial-box .role {
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .page-hero {
+                padding: 120px 20px 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Secu.li</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <a href="#kontakt" class="btn btn-primary btn-sm">Anfrage</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <nav class="breadcrumb">
+            <a href="index.html">Startseite</a> › <a href="b2b.html">B2B</a> › <span>Hotels & Gastgewerbe</span>
+        </nav>
+        <span class="hero-badge">🏨 Für Gastgewerbe</span>
+        <h1>Brandschutz für Hotels & Gastgewerbe</h1>
+        <p class="subtitle">Diskrete Rauchmelder für Gästezimmer, schnelle Wartung außerhalb der Stoßzeiten, lückenlose
+            Dokumentation für Versicherungen und Behörden.</p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <a href="#kontakt" class="btn btn-primary btn-lg">Beratung anfordern</a>
+            <a href="tel:+4915778631120" class="btn btn-outline btn-lg" style="border-color: white; color: white;">📞
+                +49 157 78631120</a>
+        </div>
+    </section>
+
+    <div class="content-section">
+        <h2>Für wen wir arbeiten</h2>
+
+        <div class="segment-tabs">
+            <div class="segment-tab">
+                <div class="icon">🏨</div>
+                <h4>Hotels</h4>
+            </div>
+            <div class="segment-tab">
+                <div class="icon">🏡</div>
+                <h4>Pensionen</h4>
+            </div>
+            <div class="segment-tab">
+                <div class="icon">🍽️</div>
+                <h4>Restaurants</h4>
+            </div>
+            <div class="segment-tab">
+                <div class="icon">🍺</div>
+                <h4>Gaststätten</h4>
+            </div>
+            <div class="segment-tab">
+                <div class="icon">🏕️</div>
+                <h4>Ferienwohnungen</h4>
+            </div>
+        </div>
+
+        <h2>Besondere Anforderungen im Gastgewerbe</h2>
+        <p>Beherbergungsbetriebe unterliegen strengen Brandschutzvorschriften. Die Sicherheit Ihrer Gäste hat höchste
+            Priorität – gleichzeitig soll der Betriebsablauf nicht gestört werden.</p>
+
+        <div class="feature-cards">
+            <div class="feature-card-pro">
+                <div class="icon">🎨</div>
+                <h4>Diskrete Montage</h4>
+                <p>Elegante Rauchmelder, die sich harmonisch in Ihr Raumdesign einfügen – in verschiedenen Farben
+                    erhältlich.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🕐</div>
+                <h4>Flexible Zeiten</h4>
+                <p>Installation und Wartung außerhalb der Stoßzeiten – frühmorgens oder spätabends, wenn weniger Gäste
+                    da sind.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🔇</div>
+                <h4>Lärmarm</h4>
+                <p>Schnelle, leise Montage ohne Bohrlärm dank moderner Klebetechnik – ideal für den laufenden Betrieb.
+                </p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">📋</div>
+                <h4>Behördenkonforme Doku</h4>
+                <p>Lückenlose Dokumentation für Brandschauen, Versicherungen und Genehmigungsbehörden.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🔔</div>
+                <h4>Fehlalarm-Prävention</h4>
+                <p>Hochwertige Melder mit minimaler Fehlalarmrate – um Ihre Gäste nicht unnötig zu stören.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🚨</div>
+                <h4>Notfall-Hotline</h4>
+                <p>24/7 erreichbar bei technischen Problemen oder nach Alarmen.</p>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ Brandschutz-Vorschriften für Beherbergungsbetriebe</h3>
+            <p>Hotels und Pensionen müssen laut Beherbergungsstättenverordnung besondere Brandschutzanforderungen
+                erfüllen. Rauchmelder sind in allen Gästezimmern, Fluren und Gemeinschaftsräumen Pflicht. Die Wartung
+                muss dokumentiert werden. Bei Verstößen drohen empfindliche Bußgelder – im Schadensfall haftet der
+                Betreiber persönlich.</p>
+        </div>
+
+        <h2>Unsere Leistungen für Hotels & Gastgewerbe</h2>
+
+        <ul class="check-list">
+            <li><strong>Bestandsaufnahme:</strong> Kostenlose Vor-Ort-Begehung und Bedarfsanalyse</li>
+            <li><strong>Konzepterstellung:</strong> Brandschutzkonzept nach Ihren Räumlichkeiten</li>
+            <li><strong>Installation:</strong> Fachgerechte Montage zu Ihren Wunschzeiten</li>
+            <li><strong>Wartung:</strong> Jährliche Prüfung mit Erinnerungsservice</li>
+            <li><strong>Dokumentation:</strong> Protokolle für Behörden und Versicherungen</li>
+            <li><strong>Notfall-Service:</strong> Schnelle Reaktion bei Störungen oder Defekten</li>
+            <li><strong>Schulung:</strong> Einweisung Ihres Personals in Brandschutz-Basics (optional)</li>
+        </ul>
+
+        <div class="testimonial-box">
+            <p class="quote">"Die Wartung erfolgt immer zwischen 6 und 8 Uhr morgens, bevor unsere Gäste aufstehen. Wir
+                haben keinerlei Beschwerden und die Dokumentation für die Versicherung ist immer lückenlos."</p>
+            <p class="author">Hoteldirektor, 4-Sterne Hotel in München</p>
+            <p class="role">85 Zimmer, 170 Rauchmelder</p>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 Versicherungsvorteile nutzen</h3>
+            <p>Mit einer professionellen Wartungsdokumentation können Sie bei vielen Versicherungen Rabatte auf Ihre
+                Betriebshaftpflicht erhalten. Fragen Sie Ihren Versicherer nach den Konditionen für zertifizierten
+                Brandschutz.</p>
+        </div>
+
+        <div class="cta-box" id="kontakt">
+            <h3>Jetzt Beratung für Ihr Hotel anfordern</h3>
+            <p>Erhalten Sie ein individuelles Brandschutzkonzept für Ihren Betrieb – diskret, effizient und
+                behördenkonform.</p>
+            <div class="btn-group">
+                <a href="kontakt.html?service=hotel" class="btn" style="background: white; color: var(--primary);">✉️
+                    Beratung anfordern</a>
+                <a href="tel:+4915778631120" class="btn"
+                    style="border: 2px solid white; color: white; background: transparent;">📞 +49 157 78631120</a>
+            </div>
+        </div>
+
+        <div style="background: #F9FAFB; padding: 25px 30px; border-radius: 15px; margin-top: 40px;">
+            <h3 style="margin-top: 0;">Weitere B2B-Lösungen</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 10px;">
+                <li><a href="gewerbeimmobilien.html" style="color: var(--primary);">→ Für Gewerbeimmobilien</a></li>
+                <li><a href="hausverwaltung.html" style="color: var(--primary);">→ Für Hausverwaltungen</a></li>
+                <li><a href="facility-management.html" style="color: var(--primary);">→ Für Facility Management</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center; padding: 30px;">
+            <p>&copy; 2024 Secu.li - Brandschutz für Hotels & Gastgewerbe</p>
+            <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +17,20 @@
             z-index: 1;
             text-align: center;
         }
+
         .page-hero h1 {
             font-size: 4rem;
             margin-bottom: 15px;
             color: white;
         }
+
         .page-hero .subtitle {
             font-size: 1.2rem;
             opacity: 0.9;
             max-width: 600px;
             margin: 0 auto 30px;
         }
+
         .hero-badge {
             display: inline-block;
             background: var(--primary);
@@ -37,11 +41,13 @@
             font-weight: 600;
             margin-bottom: 20px;
         }
+
         .content-section {
             padding: 60px 20px;
             max-width: 900px;
             margin: 0 auto;
         }
+
         .content-section h2 {
             color: #1a1a1a;
             margin-top: 40px;
@@ -49,9 +55,11 @@
             padding-bottom: 10px;
             border-bottom: 2px solid #E5E7EB;
         }
+
         .content-section h2:first-child {
             margin-top: 0;
         }
+
         .info-box {
             background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
             padding: 25px 30px;
@@ -59,10 +67,12 @@
             margin: 30px 0;
             border-left: 4px solid #10B981;
         }
+
         .info-box h3 {
             margin-top: 0;
             color: #047857;
         }
+
         .warning-box {
             background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
             padding: 25px 30px;
@@ -70,6 +80,7 @@
             margin: 30px 0;
             border-left: 4px solid #F59E0B;
         }
+
         .cta-box {
             background: linear-gradient(135deg, #C41E3A, #991B1B);
             color: white;
@@ -78,19 +89,23 @@
             margin: 50px 0;
             text-align: center;
         }
+
         .cta-box h3 {
             color: white;
             margin-top: 0;
         }
+
         .cta-box p {
             opacity: 0.95;
         }
+
         .feature-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
             margin: 30px 0;
         }
+
         .feature-card-pro {
             background: white;
             border: 1px solid #E5E7EB;
@@ -99,33 +114,40 @@
             text-align: center;
             transition: all 0.3s;
         }
+
         .feature-card-pro:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
+
         .feature-card-pro .icon {
             font-size: 4rem;
             margin-bottom: 15px;
         }
+
         .feature-card-pro h4 {
             margin: 0 0 10px;
             color: #1a1a1a;
         }
+
         .feature-card-pro p {
             margin: 0;
             color: #6B7280;
             font-size: 0.95rem;
         }
+
         .check-list {
             list-style: none;
             padding: 0;
         }
+
         .check-list li {
             padding: 12px 0;
             padding-left: 30px;
             position: relative;
             border-bottom: 1px solid #E5E7EB;
         }
+
         .check-list li:before {
             content: "✓";
             position: absolute;
@@ -133,31 +155,37 @@
             color: #10B981;
             font-weight: bold;
         }
+
         .cross-list li:before {
             content: "✗";
             color: #DC2626;
         }
+
         .breadcrumb {
             display: flex;
             gap: 8px;
             font-size: 0.9rem;
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             justify-content: center;
             margin-bottom: 20px;
         }
+
         .breadcrumb a {
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
         }
+
         .breadcrumb a:hover {
             color: white;
         }
+
         .related-links {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             margin: 30px 0;
         }
+
         .related-link {
             display: block;
             padding: 20px;
@@ -168,20 +196,24 @@
             font-weight: 500;
             transition: all 0.3s;
         }
+
         .related-link:hover {
             background: var(--primary);
             color: white;
         }
+
         @media (max-width: 768px) {
             .page-hero h1 {
                 font-size: 1.8rem;
             }
+
             .page-hero {
                 padding: 120px 20px 60px;
             }
         }
     </style>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -197,84 +229,233 @@
             </nav>
         </div>
     </header>
-    
+
     <section class="page-hero">
         <nav class="breadcrumb">
-            <a href="index.html">Startseite</a> › <a href="ratgeber.html">Ratgeber</a> › <span>Funkvernetzte Rauchmelder</span>
+            <a href="index.html">Startseite</a> › <a href="ratgeber.html">Ratgeber</a> › <span>Funkvernetzte
+                Rauchmelder</span>
         </nav>
         <span class="hero-badge">📶 Vernetzt</span>
         <h1>Funkvernetzte Rauchmelder</h1>
         <p class="subtitle">Wenn einer Alarm schlägt, alarmieren alle - maximale Sicherheit für Ihr Zuhause.</p>
     </section>
-    
+
     <div class="content-section">
-        
-        <h2>Das Prinzip der Vernetzung</h2>
-        <p>Funkvernetzte Rauchmelder kommunizieren drahtlos. <strong>Löst ein Melder aus, alarmieren alle anderen gleichzeitig.</strong></p>
-        
+
+        <h2>Das Prinzip der Funkvernetzung bei Rauchmeldern</h2>
+        <p>Funkvernetzte Rauchmelder kommunizieren per <strong>Funkwellen drahtlos miteinander</strong>. Löst ein Melder
+            aus,
+            alarmieren alle anderen gleichzeitig. Das bedeutet: Sie werden in jedem Raum des Hauses gewarnt, unabhängig
+            davon,
+            wo der Brand entstanden ist. In großen Häusern oder mehrstöckigen Gebäuden ist dies
+            <strong>lebensrettend</strong>,
+            da einzelne Rauchmelder möglicherweise nicht im gesamten Gebäude hörbar sind.</p>
+
+        <p>Die Vernetzung erfolgt über verschlüsselte Funksignale im Frequenzbereich 868 MHz. Diese Frequenz ist
+            speziell für
+            Sicherheitsanwendungen reserviert und störungsfrei. Die Reichweite beträgt im Freien bis zu 100 Meter,
+            in Gebäuden durch Wände und Decken hindurch typischerweise 30-50 Meter – mehr als ausreichend für die
+            meisten
+            Wohngebäude.</p>
+
         <div class="info-box">
-            <h3>🔊 Beispiel</h3>
-            <p>Ein Brand entsteht im Keller. Der Kellermelder löst aus. Gleichzeitig alarmieren alle Melder im Haus - auch im 2. Stock wo Sie schlafen.</p>
+            <h3>🔊 Praxisbeispiel: Warum Vernetzung Leben rettet</h3>
+            <p>Ein Brand entsteht im Keller Ihres Hauses. Der Kellermelder löst sofort aus. Gleichzeitig alarmieren
+                alle vernetzten Melder im gesamten Haus – auch im 2. Stock, wo Sie und Ihre Familie schlafen.
+                Ohne Vernetzung würden Sie den Kellerbrand möglicherweise erst bemerken, wenn der Rauch bereits
+                die oberen Stockwerke erreicht hat.</p>
         </div>
-        
-        <h2>Vorteile</h2>
+
+        <h2>Vorteile von funkvernetzten Rauchmeldern</h2>
         <ul class="check-list">
-            <li><strong>Hören den Alarm überall</strong> - auch weit entfernt vom Brandherd</li>
-            <li><strong>Mehr Zeit zur Flucht</strong> - schnellere Warnung</li>
-            <li><strong>Ideal für mehrstöckige Häuser</strong></li>
-            <li><strong>Keine Kabel</strong> - einfache Installation</li>
-            <li><strong>Erweiterbar</strong> - beliebig viele Melder vernetzbar</li>
+            <li><strong>Maximale Hörbarkeit</strong> – Alarm überall im Haus, auch weit entfernt vom Brandherd</li>
+            <li><strong>Mehr Zeit zur Flucht</strong> – Schnellere Warnung ermöglicht frühzeitige Evakuierung</li>
+            <li><strong>Ideal für mehrstöckige Gebäude</strong> – Keller bis Dachgeschoss vernetzt</li>
+            <li><strong>Keine Kabelverlegung</strong> – Einfache nachträgliche Installation ohne Beschädigung von Wänden
+            </li>
+            <li><strong>Flexibel erweiterbar</strong> – Beliebig viele Melder können dem System hinzugefügt werden</li>
+            <li><strong>Zentrale Alarmmeldung</strong> – Alle Melder zeigen den Brandherd an</li>
+            <li><strong>10-Jahres-Batterien</strong> – Langlebig und wartungsarm</li>
+            <li><strong>Smart-Home-Integration</strong> – Viele Modelle mit App-Anbindung verfügbar</li>
         </ul>
-        
-        <h2>Wann sind Funkrauchmelder sinnvoll?</h2>
+
+        <h2>Wann sind Funkrauchmelder besonders sinnvoll?</h2>
+        <p>Funkvernetzte Rauchmelder sind die ideale Wahl für alle größeren Wohnbereiche. Besonders empfehlenswert sind
+            sie für:</p>
         <div class="feature-cards">
             <div class="feature-card-pro">
                 <div class="icon">🏠</div>
                 <h4>Mehrstöckige Häuser</h4>
+                <p>Einfamilienhäuser mit Keller, Erdgeschoss und Obergeschoss</p>
             </div>
             <div class="feature-card-pro">
                 <div class="icon">📏</div>
                 <h4>Große Wohnungen</h4>
-                <p>Über 100m²</p>
+                <p>Wohnflächen über 100m² mit vielen Räumen</p>
             </div>
             <div class="feature-card-pro">
                 <div class="icon">👴</div>
-                <h4>Senioren</h4>
-                <p>Hörgeschädigte</p>
+                <h4>Senioren & Hörgeschädigte</h4>
+                <p>Zusätzliche Sicherheit durch lautere Gesamtwarnung</p>
             </div>
             <div class="feature-card-pro">
                 <div class="icon">👶</div>
-                <h4>Familien</h4>
-                <p>Mit Kindern</p>
+                <h4>Familien mit Kindern</h4>
+                <p>Schutz für alle Familienmitglieder in jedem Raum</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🏢</div>
+                <h4>Gewerbeobjekte</h4>
+                <p>Büros, Praxen, kleine Hotels und Pensionen</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🏗️</div>
+                <h4>Altbauten</h4>
+                <p>Keine Kabel nötig – ideal für denkmalgeschützte Gebäude</p>
             </div>
         </div>
-        
-        <h2>Reichweite & Kosten</h2>
-        <p>Reichweite: <strong>50-100m</strong> im Freien, 30-40m in Gebäuden.</p>
+
+        <h2>Technische Daten und Reichweite</h2>
+        <p>Die wichtigsten technischen Eigenschaften von Funkrauchmeldern:</p>
+        <ul style="margin: 20px 0; padding-left: 20px;">
+            <li><strong>Funkfrequenz:</strong> 868,3 MHz (störungsfrei, für Sicherheitsanwendungen reserviert)</li>
+            <li><strong>Reichweite:</strong> 50-100m im Freien, 30-50m durch Wände und Decken</li>
+            <li><strong>Vernetzung:</strong> Bis zu 40 Melder pro System (je nach Hersteller)</li>
+            <li><strong>Batterie:</strong> Lithium-Batterie mit 10 Jahren Lebensdauer (fest verbaut)</li>
+            <li><strong>Alarmton:</strong> Mindestens 85 dB (alle Melder gemeinsam deutlich lauter)</li>
+            <li><strong>Zertifizierung:</strong> DIN EN 14604, Q-Label empfohlen</li>
+        </ul>
+
+        <h2>Kosten und Preise für Funkrauchmelder</h2>
+        <p>Die Investition in funkvernetzte Rauchmelder ist höher als bei Einzelmeldern, bietet aber deutlich mehr
+            Sicherheit:</p>
         <table class="service-table" style="margin-top: 20px;">
-            <thead><tr><th>Typ</th><th>Preis</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Preis</th>
+                    <th>Empfehlung</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td>Einzelmelder ohne Funk</td><td>ab 20€</td></tr>
-                <tr><td>Funkrauchmelder</td><td>ab 40€</td></tr>
-                <tr><td>Funk-Set (5 Melder)</td><td>ab 180€</td></tr>
+                <tr>
+                    <td>Einzelmelder ohne Funk</td>
+                    <td>ab 20€</td>
+                    <td>Kleine Wohnungen</td>
+                </tr>
+                <tr>
+                    <td>Funkrauchmelder (einzeln)</td>
+                    <td>ab 40€</td>
+                    <td>Nachrüstung</td>
+                </tr>
+                <tr>
+                    <td>Funk-Set (5 Melder)</td>
+                    <td>ab 180€</td>
+                    <td>Einfamilienhaus</td>
+                </tr>
+                <tr>
+                    <td>Funk-Set (10 Melder)</td>
+                    <td>ab 350€</td>
+                    <td>Großes Haus</td>
+                </tr>
+                <tr>
+                    <td>Professional-Installation (pro Melder)</td>
+                    <td>ab 50€</td>
+                    <td>Inklusive Montage</td>
+                </tr>
             </tbody>
         </table>
-        
-        <h2>Weitere Rauchmelder-Arten</h2>
+
+        <h2>Häufige Fragen zu Funkrauchmeldern (FAQ)</h2>
+
+        <div style="margin: 30px 0;">
+            <details style="background: #F9FAFB; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <summary style="font-weight: 600; cursor: pointer;">Wie viele Funkrauchmelder können vernetzt werden?
+                </summary>
+                <p style="margin-top: 15px;">Je nach Hersteller können zwischen 12 und 40 Melder miteinander vernetzt
+                    werden. Für ein durchschnittliches Einfamilienhaus mit 5-8 Meldern ist dies mehr als ausreichend.
+                    Bei größeren Objekten können mehrere Gruppen gebildet werden.</p>
+            </details>
+
+            <details style="background: #F9FAFB; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <summary style="font-weight: 600; cursor: pointer;">Funktioniert die Vernetzung auch durch Betondecken?
+                </summary>
+                <p style="margin-top: 15px;">Ja, moderne Funkrauchmelder senden im 868 MHz-Band, das auch durch Beton
+                    und Mauerwerk reicht. Bei sehr massiven Decken kann die Reichweite reduziert sein, in normalen
+                    Wohnhäusern ist dies jedoch kein Problem. Bei Unsicherheit empfehlen wir einen Vor-Ort-Test.</p>
+            </details>
+
+            <details style="background: #F9FAFB; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <summary style="font-weight: 600; cursor: pointer;">Kann ich normale und Funkrauchmelder mischen?
+                </summary>
+                <p style="margin-top: 15px;">Das ist technisch möglich, allerdings sind nur die Funkmelder untereinander
+                    vernetzt. Normale Melder bleiben Einzelgeräte. Für maximale Sicherheit empfehlen wir, alle Melder im
+                    Haus zu vernetzen.</p>
+            </details>
+
+            <details style="background: #F9FAFB; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <summary style="font-weight: 600; cursor: pointer;">Was passiert bei einem Fehlalarm eines Melders?
+                </summary>
+                <p style="margin-top: 15px;">Bei einem Fehlalarm (z.B. durch Wasserdampf) wird das Alarmsignal ebenfalls
+                    an alle vernetzten Melder weitergegeben. Sie können den Alarm meist über eine Stummschaltungstaste
+                    an jedem Melder deaktivieren. Bei häufigen Fehlalarmen sollte der betroffene Melder überprüft
+                    werden.</p>
+            </details>
+
+            <details style="background: #F9FAFB; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <summary style="font-weight: 600; cursor: pointer;">Müssen Funkrauchmelder vom Fachmann installiert
+                    werden?</summary>
+                <p style="margin-top: 15px;">Die Installation ist auch für Laien möglich. Allerdings empfehlen wir für
+                    die optimale Platzierung und Vernetzung einen Fachmann. Besonders bei größeren Systemen stellen wir
+                    die korrekte Programmierung und Reichweite sicher.</p>
+            </details>
+
+            <details style="background: #F9FAFB; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <summary style="font-weight: 600; cursor: pointer;">Wie lange halten die Batterien bei Funkrauchmeldern?
+                </summary>
+                <p style="margin-top: 15px;">Hochwertige Funkrauchmelder mit Q-Label haben fest verbaute
+                    Lithium-Batterien mit einer Lebensdauer von 10 Jahren. Nach dieser Zeit muss der gesamte Melder
+                    ausgetauscht werden, da die Batterie nicht gewechselt werden kann.</p>
+            </details>
+
+            <details style="background: #F9FAFB; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <summary style="font-weight: 600; cursor: pointer;">Gibt es Funkrauchmelder mit Smart-Home-Anbindung?
+                </summary>
+                <p style="margin-top: 15px;">Ja, viele moderne Funkrauchmelder lassen sich in Smart-Home-Systeme
+                    integrieren. Sie können Alarme per App empfangen, auch wenn Sie nicht zuhause sind. Beliebte Systeme
+                    sind die Bosch Smart Home Rauchmelder, Homematic IP und Fibaro Smoke Sensor.</p>
+            </details>
+
+            <details style="background: #F9FAFB; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <summary style="font-weight: 600; cursor: pointer;">Können Funkrauchmelder gestört oder gehackt werden?
+                </summary>
+                <p style="margin-top: 15px;">Die verwendete Funkfrequenz 868 MHz ist für Sicherheitsanwendungen
+                    reserviert und stark geschützt. Die Kommunikation ist verschlüsselt. Ein Hacken oder Stören ist
+                    extrem unwahrscheinlich und wurde in der Praxis bisher nicht beobachtet.</p>
+            </details>
+        </div>
+
+        <h2>Weitere Rauchmelder-Arten im Vergleich</h2>
         <div class="related-links">
             <a href="optische-rauchmelder.html" class="related-link">Optische Rauchmelder →</a>
             <a href="ionisationsmelder.html" class="related-link">Ionisationsmelder →</a>
-            <a href="thermomelder.html" class="related-link">Thermomelder →</a>
+            <a href="thermomelder.html" class="related-link">Thermomelder (Wärmemelder) →</a>
         </div>
-        
+
         <div class="cta-box">
-            <h3>Vernetztes System für Ihr Zuhause?</h3>
-            <p>Wir planen und installieren Ihr vernetztes Rauchmelder-System.</p>
-            <a href="kontakt.html" class="btn" style="background: white; color: var(--primary);">Jetzt anfragen</a>
+            <h3>Vernetztes Rauchmelder-System für Ihr Zuhause?</h3>
+            <p>Wir beraten Sie zur optimalen Lösung, planen und installieren Ihr vernetztes Rauchmelder-System –
+                professionell und zum Festpreis.</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="kontakt.html" class="btn" style="background: white; color: var(--primary);">✉️ Beratung
+                    anfordern</a>
+                <a href="tel:+4915778631120" class="btn"
+                    style="border: 2px solid white; color: white; background: transparent;">📞 Jetzt anrufen</a>
+            </div>
         </div>
 
     </div>
-    
+
     <footer class="footer">
         <div class="container" style="text-align: center; padding: 30px;">
             <p>&copy; 2024 Secu.li - Funkvernetzte Rauchmelder</p>
@@ -283,4 +464,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

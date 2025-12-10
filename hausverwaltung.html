@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rauchmelder-Service für Hausverwaltungen: Zentrale Dokumentation, Mieterkommunikation, Terminkoordination. Entlasten Sie sich von der Rauchmelderpflicht!">
+    <meta name="keywords"
+        content="Rauchmelder Hausverwaltung, Rauchmelderpflicht Mietwohnung, Rauchmelder Service Vermieter, Hausverwaltung Brandschutz">
+    <title>Rauchmelder für Hausverwaltungen | Komplettservice | Secu.li</title>
+    <link rel="canonical" href="https://secu.li/hausverwaltung.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#C41E3A">
+
+    <!-- Schema.org für SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Rauchmelder-Service für Hausverwaltungen",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Secu.li"
+        },
+        "serviceType": "Rauchmelder Installation und Wartung für Hausverwaltungen",
+        "areaServed": "Deutschland"
+    }
+    </script>
+
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 160px 20px 80px;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: white;
+        }
+
+        .content-section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+
+        .content-section h2:first-child {
+            margin-top: 0;
+        }
+
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .feature-card-pro {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .feature-card-pro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card-pro .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card-pro h4 {
+            margin: 0 0 10px;
+            color: #1a1a1a;
+        }
+
+        .feature-card-pro p {
+            margin: 0;
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #10B981;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: #047857;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
+            padding: 25px 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid #F59E0B;
+        }
+
+        .warning-box h3 {
+            margin-top: 0;
+            color: #92400E;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #C41E3A, #991B1B);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .cta-box p {
+            opacity: 0.95;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+
+        .cta-box .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .check-list li {
+            padding: 15px 0;
+            padding-left: 35px;
+            position: relative;
+            border-bottom: 1px solid #E5E7EB;
+            font-size: 1.05rem;
+        }
+
+        .check-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10B981;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .check-list li:last-child {
+            border-bottom: none;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+
+        .pro-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 500px;
+        }
+
+        .pro-table th,
+        .pro-table td {
+            padding: 18px 20px;
+            text-align: left;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .pro-table th {
+            background: #1a1a1a;
+            color: white;
+            font-weight: 600;
+        }
+
+        .pro-table tr:hover {
+            background: #F9FAFB;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-card .label {
+            color: #6B7280;
+            font-size: 0.95rem;
+        }
+
+        .process-steps {
+            display: grid;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            padding: 25px;
+            background: #F9FAFB;
+            border-radius: 15px;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            margin: 0 0 8px;
+            color: #1a1a1a;
+        }
+
+        .step-content p {
+            margin: 0;
+            color: #6B7280;
+        }
+
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .page-hero {
+                padding: 120px 20px 60px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cta-box {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Secu.li</a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <a href="#kontakt" class="btn btn-primary btn-sm">Anfrage</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <nav class="breadcrumb">
+            <a href="index.html">Startseite</a> › <a href="b2b.html">B2B</a> › <span>Hausverwaltung</span>
+        </nav>
+        <span class="hero-badge">🏢 Für Hausverwaltungen</span>
+        <h1>Rauchmelder-Service für Hausverwaltungen</h1>
+        <p class="subtitle">Entlasten Sie sich von der Koordination der Rauchmelderpflicht. Wir übernehmen Installation,
+            Wartung und Dokumentation für Ihren gesamten Wohnungsbestand.</p>
+        <div class="hero-buttons" style="justify-content: center; display: flex; gap: 15px; flex-wrap: wrap;">
+            <a href="#kontakt" class="btn btn-primary btn-lg">Kostenlose Beratung</a>
+            <a href="tel:+4915778631120" class="btn btn-outline btn-lg" style="border-color: white; color: white;">📞
+                +49 157 78631120</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section style="background: #F9FAFB; padding: 40px 20px;">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="number">500+</span>
+                    <span class="label">Hausverwaltungen</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">50.000+</span>
+                    <span class="label">Verwaltete Einheiten</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">100%</span>
+                    <span class="label">Dokumentation</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">24h</span>
+                    <span class="label">Reaktionszeit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content-section">
+        <h2>Ihre Herausforderungen als Hausverwaltung</h2>
+        <p>Als Hausverwaltung tragen Sie die Verantwortung für hunderte oder tausende Wohneinheiten. Die
+            Rauchmelderpflicht bedeutet:</p>
+
+        <ul class="check-list" style="list-style: none;">
+            <li style="padding-left: 35px; position: relative;"><span
+                    style="position: absolute; left: 0; color: #DC2626;">✗</span> Koordination von Terminen mit vielen
+                Mietern</li>
+            <li style="padding-left: 35px; position: relative;"><span
+                    style="position: absolute; left: 0; color: #DC2626;">✗</span> Dokumentationspflichten für
+                Versicherungen</li>
+            <li style="padding-left: 35px; position: relative;"><span
+                    style="position: absolute; left: 0; color: #DC2626;">✗</span> Haftungsrisiken bei fehlender Wartung
+            </li>
+            <li style="padding-left: 35px; position: relative;"><span
+                    style="position: absolute; left: 0; color: #DC2626;">✗</span> Unübersichtlicher Status verschiedener
+                Objekte</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>💡 Unsere Lösung: Komplett-Entlastung</h3>
+            <p>Wir übernehmen die gesamte Abwicklung der Rauchmelderpflicht für Sie – von der Terminvereinbarung mit
+                Mietern bis zur rechtssicheren Dokumentation. Sie haben einen festen Ansprechpartner und jederzeit
+                Zugriff auf alle Protokolle.</p>
+        </div>
+
+        <h2>Unsere Leistungen für Hausverwaltungen</h2>
+
+        <div class="feature-cards">
+            <div class="feature-card-pro">
+                <div class="icon">📅</div>
+                <h4>Terminkoordination</h4>
+                <p>Wir vereinbaren alle Termine direkt mit Ihren Mietern – Sie werden nur informiert.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🏗️</div>
+                <h4>Fachgerechte Installation</h4>
+                <p>DIN 14676 konforme Montage durch geschulte Techniker.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">🔍</div>
+                <h4>Jährliche Wartung</h4>
+                <p>Automatische Erinnerung und Durchführung der Pflichtprüfung.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">📄</div>
+                <h4>Digitale Dokumentation</h4>
+                <p>Alle Protokolle online abrufbar – sortiert nach Objekten und Wohnungen.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">👤</div>
+                <h4>Fester Ansprechpartner</h4>
+                <p>Ein persönlicher Kontakt für alle Ihre Objekte und Anliegen.</p>
+            </div>
+            <div class="feature-card-pro">
+                <div class="icon">📊</div>
+                <h4>Übersichtliche Berichte</h4>
+                <p>Quartals- und Jahresberichte für alle Ihre Liegenschaften.</p>
+            </div>
+        </div>
+
+        <h2>So funktioniert's</h2>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Bestandsaufnahme</h4>
+                    <p>Sie übermitteln uns Ihre Objektdaten. Wir erstellen einen Überblick über alle Wohneinheiten und
+                        den aktuellen Status der Rauchmelder.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Terminplanung</h4>
+                    <p>Wir kontaktieren Ihre Mieter direkt und vereinbaren passende Termine für Installation oder
+                        Wartung.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Durchführung</h4>
+                    <p>Unsere Techniker führen die Arbeiten fachgerecht durch und dokumentieren alles digital.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Dokumentation</h4>
+                    <p>Sie erhalten alle Protokolle digital – sortiert nach Objekten, jederzeit abrufbar.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Mengenrabatte für Hausverwaltungen</h2>
+
+        <div class="table-container">
+            <table class="pro-table">
+                <thead>
+                    <tr>
+                        <th>Anzahl Wohneinheiten</th>
+                        <th>Rabatt auf Installation</th>
+                        <th>Rabatt auf Wartung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10-50 Wohnungen</td>
+                        <td>10%</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>51-200 Wohnungen</td>
+                        <td>15%</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>201-500 Wohnungen</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>500+ Wohnungen</td>
+                        <td>Individuell</td>
+                        <td>Individuell</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ Wichtig: Ihre Haftung als Hausverwaltung</h3>
+            <p>Nach § 49 der Landesbauordnungen sind Eigentümer bzw. deren Beauftragte für Installation und Wartung von
+                Rauchmeldern verantwortlich. Bei fehlender oder mangelhafter Wartung drohen im Schadensfall erhebliche
+                Haftungsrisiken. Mit unserer lückenlosen Dokumentation sind Sie auf der sicheren Seite.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="cta-box" id="kontakt">
+            <h3>Jetzt unverbindlich anfragen</h3>
+            <p>Erhalten Sie ein maßgeschneidertes Angebot für Ihre Hausverwaltung – kostenlos und unverbindlich.</p>
+            <div class="btn-group">
+                <a href="kontakt.html?service=hausverwaltung" class="btn"
+                    style="background: white; color: var(--primary);">✉️ Kontaktformular</a>
+                <a href="tel:+4915778631120" class="btn"
+                    style="border: 2px solid white; color: white; background: transparent;">📞 +49 157 78631120</a>
+            </div>
+        </div>
+
+        <!-- Internal Links -->
+        <div style="background: #F9FAFB; padding: 25px 30px; border-radius: 15px; margin-top: 40px;">
+            <h3 style="margin-top: 0;">Weitere Informationen</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 10px;">
+                <li><a href="b2b.html" style="color: var(--primary);">→ Alle B2B-Lösungen im Überblick</a></li>
+                <li><a href="vermieter.html" style="color: var(--primary);">→ Speziell für Vermieter</a></li>
+                <li><a href="wartung.html" style="color: var(--primary);">→ Informationen zur Wartung</a></li>
+                <li><a href="rauchmelderpflicht.html" style="color: var(--primary);">→ Rauchmelderpflicht nach
+                        Bundesland</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center; padding: 30px;">
+            <p>&copy; 2024 Secu.li - Rauchmelder-Service für Hausverwaltungen</p>
+            <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
