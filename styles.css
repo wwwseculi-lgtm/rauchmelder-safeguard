@@ -862,12 +862,15 @@ p {
     cursor: pointer;
     font-size: 0.875rem;
     color: var(--gray-600);
+    line-height: 1.5;
 }
 
 .checkbox-label input[type="checkbox"] {
-    width: auto;
-    margin-top: 0.25rem;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .checkbox-label a {
