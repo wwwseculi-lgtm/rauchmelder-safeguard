@@ -2017,6 +2017,23 @@ p {
         gap: 2rem;
     }
 
+    /* Contact Form Wrapper Mobile - Volle Breite */
+    .contact-form-wrapper {
+        max-width: 100% !important;
+        padding: 0 10px;
+    }
+
+    /* Inline Grid Mobile - 2 Spalten zu 1 Spalte */
+    [style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Alle 2-Spalten-Grids auf Mobile zu 1 Spalte */
+    .form-grid-2,
+    div[style*="display: grid"][style*="1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
     /* Contact Options Row Mobile - Hotline, WhatsApp, Email */
     .contact-options-row {
         grid-template-columns: 1fr;
