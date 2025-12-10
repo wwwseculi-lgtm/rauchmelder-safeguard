@@ -1875,6 +1875,60 @@ p {
         gap: 0.75rem;
     }
 
+    /* Responsive Tables Mobile */
+    .service-table {
+        display: block;
+        font-size: 0.875rem;
+    }
+
+    .service-table thead {
+        display: none;
+    }
+
+    .service-table tbody,
+    .service-table tr {
+        display: block;
+    }
+
+    .service-table tr {
+        margin-bottom: 15px;
+        padding: 15px;
+        background: #F9FAFB;
+        border-radius: 10px;
+        border: 1px solid #E5E7EB;
+    }
+
+    .service-table td {
+        display: block;
+        padding: 8px 0;
+        border: none;
+        text-align: left;
+    }
+
+    .service-table td:before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #374151;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .service-table td:first-child {
+        font-weight: 600;
+        color: var(--primary);
+        font-size: 1rem;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #E5E7EB;
+        margin-bottom: 8px;
+    }
+
+    /* Table Container for horizontal scroll fallback */
+    .table-container,
+    .mehrwert-section {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
     /* Cards Mobile */
     .feature-card {
         padding: 1.5rem;
