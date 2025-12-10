@@ -2336,6 +2336,7 @@ p {
 /* Phone Button */
 .float-phone {
     background: var(--primary);
+    animation: pulse-phone 2s infinite;
 }
 
 .float-phone:hover {
@@ -2345,12 +2346,14 @@ p {
 /* Email Button */
 .float-email {
     background: #4A90D9;
+    animation: pulse-email 2s infinite;
 }
 
 .float-email:hover {
     box-shadow: 0 6px 25px rgba(74, 144, 217, 0.5);
 }
 
+/* WhatsApp Pulse Animation */
 @keyframes pulse-whatsapp {
 
     0%,
@@ -2359,7 +2362,33 @@ p {
     }
 
     50% {
-        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+    }
+}
+
+/* Phone Pulse Animation */
+@keyframes pulse-phone {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 30px rgba(196, 30, 58, 0.7);
+    }
+}
+
+/* Email Pulse Animation */
+@keyframes pulse-email {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 15px rgba(74, 144, 217, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 30px rgba(74, 144, 217, 0.7);
     }
 }
 
